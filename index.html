@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script>
+  // 每周只修改这一行
+  const CURRENT_WEEK_PAGE = "weeklog/week-2025-11-17.html";
+
+  // 自动把所有 data-current-week 链接指向最新周
+  document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll("[data-current-week]");
+    links.forEach(link => {
+      link.setAttribute("href", CURRENT_WEEK_PAGE);
+    });
+  });
+</script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StepLog | Running Journey</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">StepLog</div>
+        <nav class="nav">
+        <a href="#about">About</a>
+        <a data-current-week>Current Week</a>
+        <a href="#log">Training Log</a>
+        </nav>
+    </div>
+  </header>
+
+  <!-- Hero 区：项目简介 -->
+  <section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <h1>StepLog</h1>
+      <p class="hero-subtitle">
+        Your running timeline — one week at a time.
+      </p>
+      <p class="hero-subtitle hero-subtitle-cn">
+        跑步旅程的周度记录系统：每周制定计划、完成训练，再复盘总结。
+      </p>
+
+      <!-- 当前周入口 -->
+        <a class="hero-button" data-current-week>
+        → Go to Current Week
+        </a>
+
+    </div>
+  </div>
+  </section>
+
+
+  <!-- About 区 -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About StepLog</h2>
+      <p>
+        StepLog is a personal running log built on GitHub Pages. It collects
+        training data, notes, and race results from different platforms
+        (Garmin, Strava, etc.) into one simple place.
+      </p>
+      <p>
+        At first, this site will host manual notes and summaries. Later, it may
+        connect to external APIs to visualize training calendars and stats.
+      </p>
+      <hr class="section-divider" />
+      <p class="section-note">
+        StepLog 是一个个人跑步记录小项目，现在主要手动记录训练内容和一些总结。
+        之后会尝试通过 API 自动获取 Garmin / Strava 的数据，生成周历和统计图表。
+      </p>
+    </div>
+  </section>
+
+  <!-- This Week（预留 Garmin 区） -->
+  <section id="week" class="section section-alt">
+    <div class="container">
+      <h2>This Week’s Training (Garmin)</h2>
+      <p class="section-subtitle">
+        For now, this is a placeholder. Later it will show the current week’s
+        Garmin calendar or a custom weekly view built from Garmin data.
+      </p>
+
+      <div class="week-placeholder">
+  <p class="placeholder-title">This Week’s Garmin Calendar</p>
+  <p class="placeholder-text">
+    Screenshot of the current week from Garmin Connect. Updated manually once a week.
+  </p>
+
+  <figure class="week-figure">
+    <img
+      src="assets/garmin_week_calendar_20251120.png"
+      alt="Garmin calendar for the current week"
+      class="week-img"
+    />
+    <figcaption class="week-caption">
+      Garmin Connect · Current week overview
+    </figcaption>
+  </figure>
+
+  <p class="placeholder-text-cn">
+    上图是从 Garmin Connect 截取的本周训练日历截图。  
+    现在先用手动更新的方式，之后我们再尝试用脚本自动生成这一区域。
+  </p>
+</div>
+    </div>
+  </section>
+
+  <!-- Training Log 概览（以后可以做列表/图表） -->
+  <section id="log" class="section">
+    <div class="container">
+      <h2>Training Log</h2>
+      <p class="section-subtitle">
+        A quick overview of recent

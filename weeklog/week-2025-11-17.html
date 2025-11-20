@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StepLog | Week {{WEEK_START}}</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">StepLog</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="week-2025-11-17.html" class="nav-active">Current Week</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 当前周基本信息 -->
+  <section class="section week-hero">
+    <div class="container">
+      <h1>Week {{WEEK_LABEL}}</h1>
+      <p class="section-subtitle">
+        Planning first, execution later — this is your structured weekly cycle page.
+      </p>
+
+      <div class="week-meta-row">
+        <div class="meta-pill">
+          <span class="meta-label">Week dates</span>
+          <span class="meta-value">{{WEEK_DATES}}</span>
+        </div>
+        <div class="meta-pill">
+          <span class="meta-label">Training cycle</span>
+          <span class="meta-value">{{CYCLE_LABEL}}</span>
+        </div>
+        <div class="meta-pill">
+          <span class="meta-label">Focus</span>
+          <span class="meta-value">{{FOCUS}}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 周计划 -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2>1 · Weekly Planning</h2>
+      <p class="section-subtitle">
+        This section is filled **before** the week starts: plan, goals, and Garmin layout.
+      </p>
+
+      <div class="week-planning-grid">
+        <!-- Garmin 截图 -->
+        <div>
+          <h3 class="week-subtitle">Garmin calendar (planned)</h3>
+          <figure class="week-figure">
+            <img
+              src="../assets/garmin_week_calendar_20251117.png"
+              alt="Planned Garmin calendar"
+              class="week-img"
+            />
+            <figcaption class="week-caption">
+              Garmin Connect · Weekly plan
+            </figcaption>
+          </figure>
+          <p class="week-note">
+            Replace the screenshot once a week. This represents your pre-written plan.
+          </p>
+        </div>
+
+        <!-- 周目标 -->
+        <div>
+          <h3 class="week-subtitle">Weekly goal</h3>
+          <div class="week-goal-card">
+            <p class="week-goal-main">
+              Main goal: <strong>{{WEEK_GOAL}}</strong>
+            </p>
+            <ul class="week-goal-list">
+              <li>Target weekly distance: <strong>{{PLANNED_DISTANCE}}</strong></li>
+              <li>Key session 1: <strong>{{KEY_SESSION_1}}</strong></li>
+              <li>Key session 2: <strong>{{KEY_SESSION_2}}</strong></li>
+              <li>Secondary focus: <strong>{{SECONDARY_FOCUS}}</strong></li>
+            </ul>
+          </div>
+
+          <h3 class="week-subtitle week-subtitle-margin">Context / constraints</h3>
+          <div class="week-context-card">
+            <ul class="week-context-list">
+              <li>{{CONTEXT_1}}</li>
+              <li>{{CONTEXT_2}}</li>
+              <li>{{CONTEXT_3}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 每日计划 -->
+      <div class="week-table-block">
+        <h3 class="week-subtitle">Planned sessions (day by day)</h3>
+        <table class="week-table">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Date</th>
+              <th>Session type</th>
+              <th>Details</th>
+              <th>Priority</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{PLAN_ROWS}}
+          </tbody>
+        </table>
+        <p class="week-note">
+          Fill this before Monday. Execution details go in the summary section below.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 周执行总结 -->
+  <section id="summary" class="section">
+    <div class="container">
+      <h2>2 · Execution & Weekly Summary</h2>
+      <p class="section-subtitle">
+        Filled during and after the week: what actually happened, how you felt, and adjustments.
+      </p>
+
+      <!-- 指标 -->
+      <div class="week-summary-metrics">
+        <div class="metric-card">
+          <p class="metric-label">Planned distance</p>
+          <p class="metric-value">{{PLANNED_DISTANCE}}</p>
+        </div>
+        <div class="metric-card">
+          <p class="metric-label">Completed distance</p>
+          <p class="metric-value">{{COMPLETED_DISTANCE}}</p>
+        </div>
+        <div class="metric-card">
+          <p class="metric-label">Completion</p>
+          <p class="metric-value">{{COMPLETION_RATE}}</p>
+        </div>
+        <div class="metric-card">
+          <p class="metric-label">General feeling</p>
+          <p class="metric-value">{{GENERAL_FEELING}}</p>
+        </div>
+      </div>
+
+      <div class="week-execution-grid">
+        <!-- 执行表 -->
+        <div>
+          <h3 class="week-subtitle">By session (executed)</h3>
+          <table class="week-table small">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Planned</th>
+                <th>Executed</th>
+                <th>Feeling</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{EXEC_ROWS}}
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 反思 -->
+        <div>
+          <h3 class="week-subtitle">Overall reflection</h3>
+          <div class="week-reflection-card">
+            <h4>What went well</h4>
+            <p>{{REFLECT_GOOD}}</p>
+
+            <h4>What was difficult</h4>
+            <p>{{REFLECT_BAD}}</p>
+
+            <h4>Adjustments for next week</h4>
+            <p>{{REFLECT_ADJUST}}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="week-final-note">
+        <h3 class="week-subtitle">One-line takeaway for future me</h3>
+        <p>{{ONE_LINE}}</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>StepLog · Weekly Template</p>
+      <p class="footer-sub">Copy · Replace · Run</p>
+    </div>
+  </footer>
+</body>
+</html>
