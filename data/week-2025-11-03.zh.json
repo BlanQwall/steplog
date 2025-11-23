@@ -1,0 +1,103 @@
+{
+  "week_start": "2025-11-03",
+  "week_end": "2025-11-09",
+  "activity_types": [
+    "Run"
+  ],
+  "total_distance_km": 28.51,
+  "total_moving_time_min": 141.9,
+  "activity_count": 6,
+  "avg_suffer_score": 17.0,
+  "activities": [
+    {
+      "id": 16337596881,
+      "name": "最最后在家乡的一跑，去送礼物 🎁",
+      "description": "",
+      "type": "Run",
+      "date": "2025-11-03",
+      "distance_km": 5.9,
+      "moving_time_min": 30.3,
+      "average_speed_m_s": 3.244,
+      "average_heartrate": 143.2,
+      "suffer_score": 20.0,
+      "city": null,
+      "state": null,
+      "country": null
+    },
+    {
+      "id": 16376844822,
+      "name": "热身",
+      "description": "",
+      "type": "Run",
+      "date": "2025-11-06",
+      "distance_km": 4.3,
+      "moving_time_min": 23.4,
+      "average_speed_m_s": 3.064,
+      "average_heartrate": 132.4,
+      "suffer_score": 5.0,
+      "city": "三麻雀村",
+      "state": "奥克西塔尼大区",
+      "country": "法国"
+    },
+    {
+      "id": 16376844740,
+      "name": "6x1’ 俱乐部",
+      "description": "",
+      "type": "Run",
+      "date": "2025-11-06",
+      "distance_km": 2.9,
+      "moving_time_min": 12.6,
+      "average_speed_m_s": 3.852,
+      "average_heartrate": 143.3,
+      "suffer_score": 8.0,
+      "city": "三麻雀村",
+      "state": "奥克西塔尼大区",
+      "country": "法国"
+    },
+    {
+      "id": 16376844765,
+      "name": "放松",
+      "description": "",
+      "type": "Run",
+      "date": "2025-11-06",
+      "distance_km": 1.56,
+      "moving_time_min": 8.7,
+      "average_speed_m_s": 3.003,
+      "average_heartrate": 144.2,
+      "suffer_score": 4.0,
+      "city": "三麻雀村",
+      "state": "奥克西塔尼大区",
+      "country": "法国"
+    },
+    {
+      "id": 16401096930,
+      "name": "热身",
+      "description": "",
+      "type": "Run",
+      "date": "2025-11-09",
+      "distance_km": 3.8,
+      "moving_time_min": 25.7,
+      "average_speed_m_s": 2.465,
+      "average_heartrate": 128.9,
+      "suffer_score": 5.0,
+      "city": "阿列斯",
+      "state": "朗格多克-鲁西荣",
+      "country": "法国"
+    },
+    {
+      "id": 16402153801,
+      "name": "阿莱斯10公里赛",
+      "description": "",
+      "type": "Run",
+      "date": "2025-11-09",
+      "distance_km": 10.05,
+      "moving_time_min": 41.2,
+      "average_speed_m_s": 4.06,
+      "average_heartrate": 159.3,
+      "suffer_score": 60.0,
+      "city": "阿列斯",
+      "state": "奥克西塔尼大区",
+      "country": "法国"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "week_start": "2025-09-29",
+  "week_end": "2025-10-05",
+  "activity_types": [
+    "Run"
+  ],
+  "total_distance_km": 61.33,
+  "total_moving_time_min": 295.4,
+  "activity_count": 6,
+  "avg_suffer_score": 38.3,
+  "activities": [
+    {
+      "id": 15982653877,
+      "name": "穿了新鞋，来个新鲜的 VMA 训练",
+      "description": "",
+      "type": "Run",
+      "date": "2025-09-30",
+      "distance_km": 15.74,
+      "moving_time_min": 75.8,
+      "average_speed_m_s": 3.464,
+      "average_heartrate": 142.3,
+      "suffer_score": 44.0,
+      "city": "三麻雀村",
+      "state": "奥克西塔尼大区",
+      "country": "法国"
+    },
+    {
+      "id": 15994322191,
+      "name": "晨跑",
+      "description": "",
+      "type": "Run",
+      "date": "2025-10-01",
+      "distance_km": 3.52,
+      "moving_time_min": 20.6,
+      "average_speed_m_s": 2.846,
+      "average_heartrate": 127.8,
+      "suffer_score": 4.0,
+      "city": "三麻雀村",
+      "state": "奥克西塔尼大区",
+      "country": "法国"
+    },
+    {
+      "id": 16005797570,
+      "name": "跑个 VT2 速度",
+      "description": "",
+      "type": "Run",
+      "date": "2025-10-02",
+      "distance_km": 18.61,
+      "moving_time_min": 87.8,
+      "average_speed_m_s": 3.533,
+      "average_heartrate": 145.7,
+      "suffer_score": 60.0,
+      "city": "三麻雀村",
+      "state": "奥克西塔尼大区",
+      "country": "法国"
+    },
+    {
+      "id": 16021606898,
+      "name": "放松跑",
+      "description": "",
+      "type": "Run",
+      "date": "2025-10-03",
+      "distance_km": 6.87,
+      "moving_time_min": 37.2,
+      "average_speed_m_s": 3.075,
+      "average_heartrate": 141.6,
+      "suffer_score": 22.0,
+      "city": null,
+      "state": null,
+      "country": null
+    },
+    {
+      "id": 16030355210,
+      "name": "下午跑",
+      "description": "",
+      "type": "Run",
+      "date": "2025-10-04",
+      "distance_km": 6.33,
+      "moving_time_min": 31.2,
+      "average_speed_m_s": 3.375,
+      "average_heartrate": 147.8,
+      "suffer_score": 26.0,
+      "city": "三麻雀村",
+      "state": "奥克西塔尼大区",
+      "country": "法国"
+    },
+    {
+      "id": 16037877281,
+      "name": "塞特半程马拉松10公里赛",
+      "description": "我本想争取40分钟，但在4公里时意识到不太可能。反正这是我最佳的10公里成绩。那就更努力训练吧！",
+      "type": "Run",
+      "date": "2025-10-05",
+      "distance_km": 10.25,
+      "moving_time_min": 42.8,
+      "average_speed_m_s": 3.988,
+      "average_heartrate": 163.4,
+      "suffer_score": 74.0,
+      "city": "塞特",
+      "state": "奥克西塔尼大区",
+      "country": "法国"
+    }
+  ]
+}
