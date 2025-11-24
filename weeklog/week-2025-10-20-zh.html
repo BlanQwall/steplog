@@ -735,7 +735,7 @@
     // 用于把 UTC 日期映射到 "Mon/Tue/..." 文本
     function weekdayShortUTC(date) {
       const idx = date.getUTCDay(); // 0=Sun..6=Sat
-      const names = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"];
+      const names = [ "周日", "周一", "周二", "周三", "周四", "周五", "周六"];
       return names[idx];
     }
 

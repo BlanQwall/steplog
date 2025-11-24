@@ -12,7 +12,7 @@
   "activities": [
     {
       "id": 16555061751,
-      "name": "傍晚跑步",
+      "name": "热身",
       "description": null,
       "type": "Run",
       "date": "2025-11-24",
@@ -27,7 +27,7 @@
     },
     {
       "id": 16555067217,
-      "name": "傍晚跑步",
+      "name": "俱乐部 体能训练",
       "description": null,
       "type": "Run",
       "date": "2025-11-24",

@@ -2,8 +2,15 @@
 <html lang="en">
 
 <script>
-  // 每周只修改这一行
-  const CURRENT_WEEK_PAGE = "weeklog/week-2025-11-17.html";
+  // 自动计算当前周周一（UTC 方式）并生成页面路径
+  const today = new Date();
+  const day = today.getUTCDay(); // 0=Sun
+  const diffToMonday = (day + 6) % 7; // Monday=0
+  const monday = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate() - diffToMonday));
+  const y = monday.getUTCFullYear();
+  const m = String(monday.getUTCMonth() + 1).padStart(2, "0");
+  const d = String(monday.getUTCDate()).padStart(2, "0");
+  const CURRENT_WEEK_PAGE = `weeklog/week-${y}-${m}-${d}.html`;
 
   // 自动把所有 data-current-week 链接指向最新周
   document.addEventListener("DOMContentLoaded", () => {
