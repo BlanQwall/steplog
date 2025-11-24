@@ -1,0 +1,13 @@
+{
+  "week_start": "2025-11-24",
+  "week_end": "2025-11-30",
+  "activity_types": [
+    "Run",
+    "Swim"
+  ],
+  "total_distance_km": 0.0,
+  "total_moving_time_min": 0.0,
+  "activity_count": 0,
+  "avg_suffer_score": null,
+  "activities": []
+}
