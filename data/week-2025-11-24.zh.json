@@ -5,10 +5,10 @@
     "Run",
     "Swim"
   ],
-  "total_distance_km": 4.47,
-  "total_moving_time_min": 36.5,
-  "activity_count": 2,
-  "avg_suffer_score": 3.0,
+  "total_distance_km": 11.68,
+  "total_moving_time_min": 73.3,
+  "activity_count": 3,
+  "avg_suffer_score": 6.7,
   "activities": [
     {
       "id": 16555061751,
@@ -36,6 +36,21 @@
       "average_speed_m_s": 1.613,
       "average_heartrate": 122.3,
       "suffer_score": 3.0,
+      "city": "三麻雀村",
+      "state": "奥克西塔尼大区",
+      "country": "法国"
+    },
+    {
+      "id": 16558791161,
+      "name": "8x100m",
+      "description": "早上6点开始跑步😀",
+      "type": "Run",
+      "date": "2025-11-25",
+      "distance_km": 7.21,
+      "moving_time_min": 36.8,
+      "average_speed_m_s": 3.265,
+      "average_heartrate": 134.7,
+      "suffer_score": 14.0,
       "city": "三麻雀村",
       "state": "奥克西塔尼大区",
       "country": "法国"
