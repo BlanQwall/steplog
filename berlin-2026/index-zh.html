@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
   <meta charset="UTF-8" />
-  <title>Season Plan · Berlin 2026 · StepLog</title>
+  <title>赛季计划 · 柏林2026 · StepLog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <style>
@@ -120,7 +120,7 @@
       align-items: center;
       padding: 0.2rem 0.6rem;
       border-radius: 999px;
-      font-size: 0.75rem;
+      font-size: 0.9rem;
       background: var(--berlin-blue);
       color: #fff;
       text-transform: uppercase;
@@ -211,7 +211,7 @@
     }
 
     .current-row::before {
-      content: "THIS WEEK";
+      content: "本周";
       position: absolute;
       left: 0;
       top: 0;
@@ -426,35 +426,31 @@
 <body>
   <header>
     <nav>
-      <a href="../index.html">← Back to StepLog Home</a>
+      <a href="../index.html">← 返回 StepLog 首页</a>
     </nav>
     <div class="header-main">
       <div class="header-text">
-        <h1>Season Plan · <span class="berlin-brand">Berlin 2026</span></h1>
+        <h1>赛季计划 · <span class="berlin-brand">Berlin 2026</span></h1>
         <p class="subtitle">
-          Berlin 2026 is a full-year training season that I designed to prepare for the
-          <a href="https://www.bmw-berlin-marathon.com/en/" target="_blank" rel="noopener">BMW Berlin-Marathon 2026</a>,
-          held on 2026-09-27. The season runs from 2025-09-25 all the way to race day on 2026-09-27, with one clear objective:
-          to finish the Berlin Marathon in under 3 hours (Sub-3). My current marathon personal best is 3:23 from the Paris Marathon 2025,
-          so improving from 3:23 down to Sub-3 in my forties is a significant challenge. To make this realistic, I have divided the year
-          into several progressive training cycles, each built around an intermediate goal race, gradually developing speed, endurance
-          and race execution towards the final Sub-3 attempt.
+          <b>”柏林2026“</b> 赛季是我为
+          <a href="https://www.bmw-berlin-marathon.com/en/" target="_blank" rel="noopener">2026柏林马拉松</a>
+          做准备的一整年训练计划。这个赛季从 2025-09-25 开始，一直持续到 2026-09-27 柏林马拉松比赛当天，目标非常明确：
+          在 2026 年 9 月 27 日的柏林马拉松中，以 Sub-3（3 小时内完赛）为终点。目前我的马拉松个人最好成绩是 2025 年巴黎马拉松的 3 小时 23 分，
+          对于已经年过不惑的我来说，要把成绩从 3:23 压到 3 小时以内，是一次不小的挑战。为了让这个目标更现实，我把这一年拆分成多个循序递进的训练周期（cycles），
+          每个 cycle 围绕一场阶段性目标赛事，逐步在速度、耐力和比赛执行方面累积能力，最终指向柏林 Sub-3。
         </p>
         <p class="subtitle">
-          This page summarises the overall structure of the Berlin 2026 season. It presents all cycles and weeks on a single timeline
-          and lets me jump to the detailed week logs and individual cycle pages when needed. The purpose is simple: to keep a clear record
-          of how the year is organised, so that past training can be reviewed, current training has context, and future training follows
-          a coherent path towards Berlin 2026.
+          本页面汇总整个 Berlin 2026 赛季的训练框架：按时间顺序展示所有训练周期及其涵盖的训练周，并在需要时跳转到对应的周记和周期页面。
+          它的目的很简单——为这一整年的训练建立一条清晰的轨迹：可以回顾过去的训练，记录现在的训练，为接下来的训练明确的方向。
         </p>
       </div>
-      <img src="./assets/Berlin_2026_logo.png" alt="Berlin 2026 logo" class="berlin-logo" />
+      <img src="./assets/Berlin_2026_logo-zh.png" alt="柏林2026 项目标志" class="berlin-logo" />
     </div>
   </header>
 
   <section id="current-week-section" class="current-week-card" style="display:none;">
     <div class="current-week-card-title">
-      <span>Current Week</span>
-      <span class="current-week-badge">Now</span>
+      <span class="current-week-badge">当前周入口</span>
     </div>
     <div id="current-week-meta" class="current-week-card-meta"></div>
     <div id="current-week-dates" class="current-week-card-meta"></div>
@@ -463,7 +459,7 @@
   </section>
 
   <section>
-    <h2>Cycles · Training overview</h2>
+    <h2>训练周期总览</h2>
     <div id="season-timeline-container">
       <div id="season-timeline-arrow">
         <div class="arrow-head"></div>
@@ -472,17 +468,17 @@
       <div id="season-timeline-labels"></div>
     </div>
     <p class="small-note">
-      The progress bar above uses weeks as ticks and colours to indicate cycles. The arrow marks the week I am currently in.
+      上方的进度条以「周」为刻度，用不同颜色区分各个训练周期，箭头标记的是当前所在的训练周。
     </p>
     <div class="table-wrap">
       <table id="cycles-table">
         <thead>
           <tr>
-            <th>Cycle</th>
-            <th>Date range</th>
-            <th>Length (weeks)</th>
-            <th>Final event</th>
-            <th>Target</th>
+            <th>周期</th>
+            <th>日期范围</th>
+            <th>周数</th>
+            <th>最终赛事</th>
+            <th>目标</th>
           </tr>
         </thead>
         <tbody>
@@ -491,8 +487,8 @@
       </table>
     </div>
     <p class="small-note">
-      Click on a row to expand the weeks inside that cycle and see their date range, distance, number of sessions and average effort.
-      The cycle that contains the current date is highlighted, and when expanded, the current week is also highlighted in the nested table.
+      点击某一行可以展开该训练周期下的所有周，查看每周的日期范围、总里程、训练次数和平均主观强度。
+      当前日期所在的训练周期会被高亮显示，在展开后，该周期中的当前周也会在下方表格中高亮。
     </p>
   </section>
 
@@ -502,23 +498,23 @@
     <div class="chart-legend">
       <span class="chart-legend-item">
         <span class="legend-color legend-distance"></span>
-        Distance (km)
+        距离（公里）
       </span>
       <span class="chart-legend-item">
         <span class="legend-color legend-effort"></span>
-        Avg effort
+        平均主观强度
       </span>
       <span class="chart-legend-item">
         <span class="legend-color legend-sessions"></span>
-        Sessions
+        训练次数
       </span>
     </div>
   </div>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>StepLog · Record every step toward the next goal</p>
-      <p class="footer-sub">A <a href="https://github.com/BlanQwall/StepLog">GitHub Repertory</a> of © <a href="https://github.com/BlanQwall/">BAI Qiang</a> </p>
+      <p>StepLog · 计划在心，脚踏实地。</p>
+      <p class="footer-sub">想了解我是谁？看这里 © <a href="https://github.com/BlanQwall/">BAI Qiang</a> · StepLog项目托管于 <a href="https://github.com/BlanQwall/StepLog">GitHub 仓库</a></p>
     </div>
   </footer>
 
@@ -553,13 +549,13 @@
     const cyclesData = [
       {
         id: 1,
-        name: "Cycle 1 · Alès 10K",
+        name: "训练周期 1 · 阿莱斯10公里赛",
         startDate: "2025-09-29",
         endDate: "2025-11-09",
         lengthWeeks: 6,
-        finalEvent: "Foulées d'Agglo Alès 10K",
-        target: "10K @ 4:00/km",
-        cyclePage: "./cycles/cycle-1.html",
+        finalEvent: "阿莱斯10公里赛",
+        target: "10公里配速 4:00分钟/公里",
+        cyclePage: "./cycles/cycle-1-zh.html",
         weeks: [
           {
             order: 1,
@@ -568,7 +564,7 @@
             distanceKm: "",
             sessions: "",
             avgEffort: "",
-            weekUrl: "../weeklog/week-berlin.html?week=2025-09-29"
+            weekUrl: "../weeklog/week-berlin-zh.html?week=2025-09-29"
           },
           {
             order: 2,
@@ -577,7 +573,7 @@
             distanceKm: "",
             sessions: "",
             avgEffort: "",
-            weekUrl: "../weeklog/week-berlin.html?week=2025-10-06"
+            weekUrl: "../weeklog/week-berlin-zh.html?week=2025-10-06"
           },
           {
             order: 3,
@@ -586,7 +582,7 @@
             distanceKm: "",
             sessions: "",
             avgEffort: "",
-            weekUrl: "../weeklog/week-berlin.html?week=2025-10-13"
+            weekUrl: "../weeklog/week-berlin-zh.html?week=2025-10-13"
           },
           {
             order: 4,
@@ -595,7 +591,7 @@
             distanceKm: "",
             sessions: "",
             avgEffort: "",
-            weekUrl: "../weeklog/week-berlin.html?week=2025-10-20"
+            weekUrl: "../weeklog/week-berlin-zh.html?week=2025-10-20"
           },
           {
             order: 5,
@@ -604,7 +600,7 @@
             distanceKm: "",
             sessions: "",
             avgEffort: "",
-            weekUrl: "../weeklog/week-berlin.html?week=2025-10-27"
+            weekUrl: "../weeklog/week-berlin-zh.html?week=2025-10-27"
           },
           {
             order: 6,
@@ -613,19 +609,19 @@
             distanceKm: "",
             sessions: "",
             avgEffort: "Race week · Alès 10K",
-            weekUrl: "../weeklog/week-berlin.html?week=2025-11-03"
+            weekUrl: "../weeklog/week-berlin-zh.html?week=2025-11-03"
           }
         ]
       },
       {
         id: 2,
-        name: "Cycle 2 · Barcelona HM",
+        name: "训练周期 2 · 巴塞罗那半程马拉松",
         startDate: "2025-11-10",
         endDate: "2026-02-15",
         lengthWeeks: 14,
-        finalEvent: "Barcelona Half Marathon",
-        target: "HM @ 4:16/km",
-        cyclePage: "./cycles/cycle-2.html",
+        finalEvent: "巴塞罗那半程马拉松",
+        target: "半马配速 4:16分钟/公里",
+        cyclePage: "./cycles/cycle-2-zh.html",
         weeks: [
           {
             order: 1,
@@ -634,7 +630,7 @@
             distanceKm: "",
             sessions: "",
             avgEffort: "",
-            weekUrl: "../weeklog/week-berlin.html?week=2025-11-10"
+            weekUrl: "../weeklog/week-berlin-zh.html?week=2025-11-10"
           },
           {
             order: 2,
@@ -643,59 +639,59 @@
             distanceKm: "",
             sessions: "",
             avgEffort: "",
-            weekUrl: "../weeklog/week-berlin.html?week=2025-11-17"
+            weekUrl: "../weeklog/week-berlin-zh.html?week=2025-11-17"
           }
           // 之后可以在这里继续补充后续周：order 3, 4, ..., 直到 Barcelona 半马比赛周
         ]
       },
       {
         id: 3,
-        name: "Cycle 3 · Montauban Marathon",
+        name: "训练周期 3 · 蒙托邦马拉松",
         startDate: "2026-02-23",
         endDate: "2026-03-29",
         lengthWeeks: 5,
-        finalEvent: "Marathon de Montauban",
-        target: "&lt; 3:08 for FRA Champs qualification",
-        cyclePage: "./cycles/cycle-3.html",
+        finalEvent: "蒙托邦马拉松",
+        target: "&lt; 3小时08分——达标法国马拉松锦标赛",
+        cyclePage: "./cycles/cycle-3-zh.html",
         weeks: [
           // 之后可以在这里补充 Cycle 3 的周计划
         ]
       },
       {
         id: 4,
-        name: "Cycle 4 · France Championship",
+        name: "训练周期 4 · 法国马拉松锦标赛",
         startDate: "2026-04-06",
         endDate: "2026-05-03",
         lengthWeeks: 4,
-        finalEvent: "Championnats de France de Marathon (Ambès)",
-        target: "Race & gain experience",
-        cyclePage: "./cycles/cycle-4.html",
+        finalEvent: "法国马拉松锦标赛（Ambès）",
+        target: "积攒比赛经验",
+        cyclePage: "./cycles/cycle-4-zh.html",
         weeks: [
           // 之后可以在这里补充 Cycle 4 的周计划
         ]
       },
       {
         id: 5,
-        name: "Cycle 5 · Summer Block",
+        name: "训练周期 5 · 夏季训练周期",
         startDate: "2026-05-04",
         endDate: "2026-08-30",
         lengthWeeks: 17,
-        finalEvent: "Berlin Marathon prep",
-        target: "Build Sub-3 engine",
-        cyclePage: "./cycles/cycle-5.html",
+        finalEvent: "无（暑假结束）",
+        target: "柏林马拉松系统性针对训练",
+        cyclePage: "./cycles/cycle-5-zh.html",
         weeks: [
           // 之后可以在这里补充夏训的周计划（如果需要覆盖默认生成）
         ]
       },
       {
         id: 6,
-        name: "Final Cycle · Berlin Marathon 2026",
+        name: "最终周期 · 2026柏林马拉松",
         startDate: "2026-08-31",
         endDate: "2026-09-21",
         lengthWeeks: 4,
-        finalEvent: "Berlin Marathon 2026",
-        target: "Sub-3 hours",
-        cyclePage: "./cycles/final.html",
+        finalEvent: "2026柏林马拉松",
+        target: "总成绩<3小时",
+        cyclePage: "./cycles/final-zh.html",
         weeks: [
           // Berlin Marathon final sharpening & race week
         ]
@@ -729,7 +725,7 @@
           distanceKm: "",
           sessions: "",
           avgEffort: "",
-          weekUrl: `../weeklog/week-berlin.html?week=${startStr}`
+          weekUrl: `../weeklog/week-berlin-zh.html?week=${startStr}`
         };
 
         const overrideWeek = overrideByStart[startStr] || {};
@@ -785,7 +781,7 @@
     function createWeeksTable(cycle, currentWeekOrder) {
       const weeks = buildCycleWeeks(cycle);
       if (!weeks.length) {
-        return `<p class="small-note">No week details yet for this cycle.</p>`;
+        return `<p class="small-note">本训练周期暂时还没有填写详细的周计划。</p>`;
       }
 
       const rows = weeks.map(week => {
@@ -825,11 +821,11 @@
         <table class="nested-weeks-table">
           <thead>
             <tr>
-              <th>Week #</th>
-              <th>Date range</th>
-              <th>Distance</th>
-              <th>Sessions</th>
-              <th>Avg effort</th>
+              <th>周次</th>
+              <th>日期范围</th>
+              <th>距离</th>
+              <th>训练次数</th>
+              <th>平均主观强度</th>
             </tr>
           </thead>
           <tbody>
@@ -855,7 +851,7 @@
         const sessionsCell = cells[3];
         const effortCell = cells[4];
 
-        const jsonPath = `../data/week-${week.startDate}.json`;
+        const jsonPath = `../data/week-${week.startDate}.zh.json`;
 
         fetch(jsonPath)
           .then(resp => {
@@ -866,7 +862,7 @@
           })
           .then(data => {
             if (typeof data.total_distance_km === "number") {
-              distanceCell.textContent = data.total_distance_km.toFixed(2) + " km";
+              distanceCell.textContent = data.total_distance_km.toFixed(2) + " 公里";
             }
             if (typeof data.activity_count === "number") {
               sessionsCell.textContent = data.activity_count;
@@ -974,22 +970,22 @@
 
       if (currentWeek) {
         const weekRange = formatDateRange(currentWeek.startDate, currentWeek.endDate);
-        meta.textContent = `${cycle.name} · Week ${currentWeek.order}`;
-        dates.textContent = `Date: ${weekRange}`;
-        focus.textContent = cycle.target ? `Target: ${cycle.target}` : "";
+        meta.textContent = `${cycle.name} · 第 ${currentWeek.order} 周`;
+        dates.textContent = `日期：${weekRange}`;
+        focus.textContent = cycle.target ? `目标：${cycle.target}` : "";
 
         if (currentWeek.weekUrl) {
-          link.innerHTML = `Week log: <a href="${currentWeek.weekUrl}">${currentWeek.weekUrl}</a>`;
+          link.innerHTML = `周记：<a href="${currentWeek.weekUrl}">${currentWeek.weekUrl}</a>`;
         } else {
           link.innerHTML = "";
         }
       } else {
         // 没有当前周（比如未来还没细化周计划），就用整个 Cycle 信息填卡片
         meta.textContent = cycle.name;
-        dates.textContent = `Cycle range: ${cycleRangeLabel}`;
-        focus.textContent = cycle.target ? `Target: ${cycle.target}` : "";
+        dates.textContent = `周期范围：${cycleRangeLabel}`;
+        focus.textContent = cycle.target ? `目标：${cycle.target}` : "";
         if (cycle.cyclePage) {
-          link.innerHTML = `Cycle page: <a href="${cycle.cyclePage}">${cycle.cyclePage}</a>`;
+          link.innerHTML = `周期页面：<a href="${cycle.cyclePage}">${cycle.cyclePage}</a>`;
         } else {
           link.innerHTML = "";
         }
@@ -1048,9 +1044,9 @@
           labelDiv.style.flex = String(weeks.length);
           let labelText;
           if (idx === cyclesData.length - 1) {
-            labelText = "Final";
+            labelText = "终期";
           } else {
-            labelText = "Cycle " + (idx + 1);
+            labelText = "训练周期 " + (idx + 1);
           }
           labelDiv.textContent = labelText;
           labels.appendChild(labelDiv);
@@ -1118,7 +1114,7 @@
       }
 
       allWeeks.forEach(w => {
-        const jsonPath = `../data/week-${w.startDate}.json`;
+        const jsonPath = `../data/week-${w.startDate}.zh.json`;
 
         fetch(jsonPath)
           .then(resp => (resp.ok ? resp.json() : null))
@@ -1232,7 +1228,7 @@ function drawSeasonChart(canvas, labels, distances, sessions, efforts, cycleBoun
     ctx.fillText(lab, x - 10, yBase + 18);
   });
 
-    // cycle labels centered under the x-axis (C1..C5, Final)
+    // cycle labels centered under the x-axis (训练周期 1..训练周期 5, 终期)
   if (Array.isArray(cycleBoundaries) && cycleBoundaries.length > 0 && stepX > 0) {
     ctx.fillStyle = "#555";
     ctx.font = "11px system-ui";
@@ -1249,9 +1245,9 @@ function drawSeasonChart(canvas, labels, distances, sessions, efforts, cycleBoun
 
       let labelText;
       if (i === cycleBoundaries.length - 1) {
-        labelText = "Final";
+        labelText = "终期";
       } else {
-        labelText = "C" + (i + 1);
+        labelText = "训练周期 " + (i + 1);
       }
 
       ctx.fillText(labelText, x - 12, yCycleLabel);

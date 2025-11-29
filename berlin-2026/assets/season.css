@@ -1,19 +1,33 @@
+:root {
+  /* Berlin 2026 core palette */
+  --berlin-blue: #0057aa;         /* main logo blue */
+  --berlin-blue-dark: #003e7a;    /* deeper accent for headings / hover */
+  --berlin-blue-light: #e5f0ff;   /* soft background tint */
+  --berlin-border: #d4dde9;       /* subtle card border */
+  --berlin-bg: #f4f6fa;           /* overall page background */
+
+  --text-main: #1f2430;           /* primary text */
+  --text-muted: #646b7a;          /* secondary / subtitle text */
+}
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  max-width: 900px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 1.5rem;
-  background: #f7f7f7;
-  color: #222;
+  background: var(--berlin-bg);
+  color: var(--text-main);
 }
 
 h1 {
   font-size: 1.8rem;
   margin-bottom: 0.3rem;
+  color: var(--berlin-blue-dark);
+  letter-spacing: 0.03em;
 }
 
 .subtitle {
-  color: #555;
+  color: var(--text-muted);
   font-size: 0.95rem;
   margin-bottom: 1.5rem;
 }
@@ -21,24 +35,33 @@ h1 {
 h2 {
   font-size: 1.3rem;
   margin-top: 2rem;
+  color: var(--berlin-blue-dark);
 }
 
 a {
-  color: #2b7bff;
+  color: var(--berlin-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--berlin-blue-dark);
+  text-decoration: underline;
 }
 
 .back-link {
   font-size: 0.9rem;
   margin-bottom: 1rem;
   display: inline-block;
+  color: var(--berlin-blue);
 }
 
 section {
-  background: #fff;
+  background: #ffffff;
   padding: 1.2rem 1.5rem;
   border-radius: 0.75rem;
   margin-bottom: 1.5rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border: 1px solid var(--berlin-border);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
 }
 
 ul {
@@ -47,4 +70,159 @@ ul {
 
 ul li {
   margin-bottom: 0.4rem;
+}
+
+/* Generic badges / pills that can be reused in cycles & weeks */
+.badge-primary {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: var(--berlin-blue);
+  color: #fff;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.badge-outline {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--berlin-blue);
+  color: var(--berlin-blue-dark);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: transparent;
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
+.accent-border {
+  border-left: 4px solid var(--berlin-blue);
+}
+
+.season-chart-container {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#season-weeks-chart {
+  width: 100%;
+  height: 320px;
+  border: 1px solid #eee;
+  background: #fff;
+  display: block;
+}
+
+.chart-legend {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.chart-legend-item {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+
+.legend-color {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 0.35rem;
+  border-radius: 2px;
+}
+
+.legend-distance { background: #1f77b4; }
+.legend-sessions { background: #2ca02c; }
+.legend-effort { background: #d62728; }
+
+/* ----- Site footer ----- */
+.site-footer {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.5rem;
+  border-top: 1px solid var(--berlin-border);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.site-footer .footer-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0.1rem 0;
+}
+
+.site-footer .footer-sub {
+  font-size: 0.8rem;
+}
+
+.site-footer a {
+  color: var(--berlin-blue);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--berlin-blue-dark);
+  text-decoration: underline;
+}
+
+/* Styles from index.html's removed <style> block */
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: var(--berlin-blue);
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+}
+
+footer {
+  background-color: var(--berlin-blue-dark);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
 }
