@@ -51,3 +51,6 @@ node_modules/
 
 # archive is collection of obsolete files.
 archive/
+
+# deploy-cn is temporal folder for deployment from GitHub Pages (Chinese version) to Tencent Cloudbase.
+deploy-cn/
