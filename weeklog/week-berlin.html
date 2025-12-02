@@ -8,7 +8,7 @@
 </head>
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../berlin-2026/assets/season.css" />
-  <style>
+    <style>
     .header-main {
       display: flex;
       align-items: flex-start;
@@ -23,6 +23,35 @@
       max-width: 240px;
       height: auto;
       opacity: 0.9;
+    }
+    .week-nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .week-nav h1 {
+      font-size: 1.4rem; /* 缩小标题字号，大概 70% 左右 */
+      margin: 0;
+    }
+    .week-nav-btn {
+      padding: 0.18rem 0.42rem; /* 比常规小按钮缩小 */
+      font-size: 0.6rem;        /* 约 70% 尺寸 */
+      border-radius: 999px;
+      border: 1px solid #ccc;
+      background: #f5f5f5;
+      cursor: pointer;
+      line-height: 1.1;
+      white-space: nowrap;
+    }
+    .week-nav-btn:hover:not(:disabled) {
+      background: #e8e8e8;
+    }
+    .week-nav-btn:disabled {
+      background: #f0f0f0;
+      color: #999;
+      border-color: #e0e0e0;
+      cursor: default;
     }
   </style>
 </head>
@@ -173,14 +202,26 @@
       }
       return null;
     }
+    function addDaysUTC(ymdStr, days) {
+      const base = makeUTCDate(ymdStr);
+      const next = new Date(base.getTime() + days * 24 * 60 * 60 * 1000);
+      return formatUTCDate(next);
+    }
 
-    document.addEventListener("DOMContentLoaded", () => {
+    function checkWeekJsonExists(weekStartStr) {
+      // 英文模板对应的周数据文件：week-YYYY-MM-DD.json
+      const url = `../data/week-${weekStartStr}.json`;
+      return fetch(url, { method: "GET" })
+        .then((res) => res.ok)
+        .catch(() => false);
+    }
+        document.addEventListener("DOMContentLoaded", () => {
       const info = computeWeekDates(WEEK_START);
 
-      // 设置页面标题
+      // Page title
       document.title = `StepLog | ${info.label}`;
 
-      // 填充顶部标题 & 周日期
+      // Top heading & week dates
       document.querySelectorAll("[data-week-label]").forEach((el) => {
         el.textContent = info.label;
       });
@@ -188,25 +229,24 @@
         el.textContent = info.dateRange;
       });
 
-      // 填充 Training cycle：根据 WEEK_START 映射到 "Cycle X · Week Y"
+      // Training cycle: map WEEK_START -> "Cycle X · Week Y"
       const cycleLabelEl = document.getElementById("week-cycle-label");
       if (cycleLabelEl) {
         const cycleInfo = findCycleInfoForWeek(WEEK_START);
         if (cycleInfo) {
           cycleLabelEl.textContent = `${cycleInfo.cycleName} · Week ${cycleInfo.weekOrder}`;
         } else {
-          // 如果未找到匹配，可以保留占位或清空
           cycleLabelEl.textContent = "–";
         }
       }
 
-      // 填充 footer 中的模版版本号
+      // Footer template version
       const versionEl = document.getElementById("template-version-label");
       if (versionEl && typeof TEMPLATE_VERSION === "string" && TEMPLATE_VERSION) {
         versionEl.textContent = `(version ${TEMPLATE_VERSION})`;
       }
 
-      // 为「每日计划表」自动填日期（Mon–Sun）
+      // Fill per-day dates (Mon–Sun) for any table that uses data-day-offset
       const base = makeUTCDate(info.startStr);
       document.querySelectorAll("tr[data-day-offset]").forEach((row) => {
         const offset = Number(row.getAttribute("data-day-offset") || "0");
@@ -217,6 +257,47 @@
           cell.textContent = dateStr;
         }
       });
+
+      // Prev / next week navigation
+      const prevBtn = document.getElementById("prev-week-btn");
+      const nextBtn = document.getElementById("next-week-btn");
+
+      const prevWeekStart = addDaysUTC(WEEK_START, -7);
+      const nextWeekStart = addDaysUTC(WEEK_START, 7);
+
+      if (prevBtn) {
+        checkWeekJsonExists(prevWeekStart).then((exists) => {
+          if (exists) {
+            prevBtn.disabled = false;
+            prevBtn.textContent = "← Previous week";
+            prevBtn.addEventListener("click", () => {
+              const url = new URL(window.location.href);
+              url.searchParams.set("week", prevWeekStart);
+              window.location.href = url.pathname + "?" + url.searchParams.toString();
+            });
+          } else {
+            prevBtn.disabled = true;
+            prevBtn.textContent = "Already the 1st week";
+          }
+        });
+      }
+
+      if (nextBtn) {
+        checkWeekJsonExists(nextWeekStart).then((exists) => {
+          if (exists) {
+            nextBtn.disabled = false;
+            nextBtn.textContent = "Next week →";
+            nextBtn.addEventListener("click", () => {
+              const url = new URL(window.location.href);
+              url.searchParams.set("week", nextWeekStart);
+              window.location.href = url.pathname + "?" + url.searchParams.toString();
+            });
+          } else {
+            nextBtn.disabled = true;
+            nextBtn.textContent = "Already the last week";
+          }
+        });
+      }
     });
   </script>
 
@@ -236,7 +317,11 @@
     <div class="container">
       <div class="header-main">
         <div class="header-text">
-          <h1 data-week-label>Week</h1>
+          <div class="week-nav">
+            <button id="prev-week-btn" class="week-nav-btn" type="button">← Previous week</button>
+            <h1 data-week-label>Week</h1>
+            <button id="next-week-btn" class="week-nav-btn" type="button">Next week →</button>
+          </div>
           <p class="section-subtitle">
             A preparation for 2026 Berlin Marathon
           </p>
