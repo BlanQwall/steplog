@@ -1,0 +1,35 @@
+name: Deploy StepLog CN Site to CloudBase
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install CloudBase CLI
+        run: npm install -g @cloudbase/cli
+
+      - name: Create clean deploy-cn folder
+        run: |
+          chmod +x build-cn.sh
+          ./build-cn.sh
+
+      - name: Login to CloudBase
+        run: |
+          tcb login --apiKeyId ${{ secrets.TENCENT_SECRET_ID }} --apiKey ${{ secrets.TENCENT_SECRET_KEY }}
+
+      - name: Deploy to CloudBase
+        run: |
+          tcb hosting deploy deploy-cn -e ${{ secrets.TENCENT_ENV_ID }}
