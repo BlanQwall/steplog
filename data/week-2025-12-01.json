@@ -5,10 +5,10 @@
     "Run",
     "Swim"
   ],
-  "total_distance_km": 7.9,
-  "total_moving_time_min": 41.9,
-  "activity_count": 2,
-  "avg_suffer_score": 9.5,
+  "total_distance_km": 18.88,
+  "total_moving_time_min": 97.3,
+  "activity_count": 3,
+  "avg_suffer_score": 23.7,
   "activities": [
     {
       "id": 16621355022,
@@ -37,6 +37,21 @@
       "average_heartrate": 139.2,
       "suffer_score": 17.0,
       "city": "Montpellier",
+      "state": "Occitanie",
+      "country": "France"
+    },
+    {
+      "id": 16641682792,
+      "name": "3Km@MP",
+      "description": "",
+      "type": "Run",
+      "date": "2025-12-03",
+      "distance_km": 10.97,
+      "moving_time_min": 55.5,
+      "average_speed_m_s": 3.295,
+      "average_heartrate": 146.0,
+      "suffer_score": 52.0,
+      "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
       "country": "France"
     }
