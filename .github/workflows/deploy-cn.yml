@@ -37,5 +37,7 @@ jobs:
           echo "TCB_COS_CHUNK_SIZE=20971520" >> $GITHUB_ENV
           
       - name: Deploy to CloudBase
+        env:
+          COS_SDK_KEEPALIVE: "false"
         run: |
           tcb hosting deploy deploy-cn -e ${{ secrets.TENCENT_ENV_ID }}
