@@ -49,5 +49,5 @@ jobs:
       # 上传新的站点文件
       - name: Upload deploy-cn to COS
         run: |
-          # 本地 ./deploy-cn 同步到桶的根目录 /
-          coscmd upload -rs ./deploy-cn /
+          cd deploy-cn
+          coscmd upload -rs ./ /
