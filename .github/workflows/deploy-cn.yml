@@ -12,7 +12,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 如果你有 build-cn.sh，就用它先生成干净的部署目录
       - name: Build deploy-cn folder
         run: |
           chmod +x build-cn.sh
@@ -21,14 +20,14 @@ jobs:
       - name: Install COSCLI
         run: |
           curl -fsSL https://coscli.cloud.tencent.com/install.sh | sh
-          echo "$HOME/coscli" >> $GITHUB_PATH
+          ls -R $HOME/coscli  # 调试用，可看到 coscli 是否在这里
 
       - name: Sync deploy-cn to COS
         env:
           TENCENT_SECRET_ID: ${{ secrets.TENCENT_SECRET_ID }}
           TENCENT_SECRET_KEY: ${{ secrets.TENCENT_SECRET_KEY }}
         run: |
-          coscli sync ./deploy-cn cos://steplog-cn-1390433657/ \
+          $HOME/coscli/coscli sync ./deploy-cn cos://steplog-cn-1390433657/ \
             --region ap-hongkong \
             --secret-id "$TENCENT_SECRET_ID" \
             --secret-key "$TENCENT_SECRET_KEY" \
