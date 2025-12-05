@@ -1,9 +1,8 @@
-name: Deploy StepLog CN Site to CloudBase
+name: Deploy CN site to COS
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
 
 jobs:
   deploy:
@@ -13,31 +12,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install CloudBase CLI
-        run: npm install -g @cloudbase/cli
-
-      - name: Create clean deploy-cn folder
+      # 如果你有 build-cn.sh，就用它先生成干净的部署目录
+      - name: Build deploy-cn folder
         run: |
           chmod +x build-cn.sh
           ./build-cn.sh
 
-      - name: Login to CloudBase
+      - name: Install COSCLI
         run: |
-          tcb login --apiKeyId ${{ secrets.TENCENT_SECRET_ID }} --apiKey ${{ secrets.TENCENT_SECRET_KEY }}
+          curl -fsSL https://coscli.cloud.tencent.com/install.sh | sh
+          echo "$HOME/coscli" >> $GITHUB_PATH
 
-      - name: Set CloudBase COS upload configs
-        run: |
-          echo "TCB_COS_RETRY=5" >> $GITHUB_ENV
-          echo "TCB_COS_TIMEOUT=300000" >> $GITHUB_ENV
-          echo "TCB_COS_CHUNK_SIZE=20971520" >> $GITHUB_ENV
-          
-      - name: Deploy to CloudBase
+      - name: Sync deploy-cn to COS
         env:
-          COS_SDK_KEEPALIVE: "false"
+          TENCENT_SECRET_ID: ${{ secrets.TENCENT_SECRET_ID }}
+          TENCENT_SECRET_KEY: ${{ secrets.TENCENT_SECRET_KEY }}
         run: |
-          tcb hosting deploy deploy-cn -e ${{ secrets.TENCENT_ENV_ID }}
+          coscli sync ./deploy-cn cos://steplog-cn-1390433657/ \
+            --region ap-hongkong \
+            --secret-id "$TENCENT_SECRET_ID" \
+            --secret-key "$TENCENT_SECRET_KEY" \
+            --delete --force
