@@ -5,10 +5,10 @@
     "Run",
     "Swim"
   ],
-  "total_distance_km": 26.0,
-  "total_moving_time_min": 134.0,
-  "activity_count": 4,
-  "avg_suffer_score": 20.5,
+  "total_distance_km": 31.77,
+  "total_moving_time_min": 165.1,
+  "activity_count": 5,
+  "avg_suffer_score": 19.0,
   "activities": [
     {
       "id": 16621355022,
@@ -66,6 +66,21 @@
       "average_speed_m_s": 3.242,
       "average_heartrate": 139.0,
       "suffer_score": 11.0,
+      "city": "Saint-Mathieu-de-Tréviers",
+      "state": "Occitanie",
+      "country": "France"
+    },
+    {
+      "id": 16662643567,
+      "name": "VMA 6x 100m@VMA",
+      "description": "",
+      "type": "Run",
+      "date": "2025-12-06",
+      "distance_km": 5.76,
+      "moving_time_min": 31.1,
+      "average_speed_m_s": 3.09,
+      "average_heartrate": 136.2,
+      "suffer_score": 13.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
       "country": "France"
