@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StepLog · Video Library</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .video-card {
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 1rem;
+    }
+    .video-card h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1rem;
+    }
+    .video-meta {
+      font-size: 0.85rem;
+      color: #777;
+      margin-bottom: 0.75rem;
+    }
+    .video-card iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <!-- 复用你现有的导航 -->
+    <h1>StepLog · Video Library</h1>
+    <p>First-person running & race POV</p>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>All Videos</h2>
+      <p class="subtitle">Playlist: training & race POV from <strong>StepLog</strong>.</p>
+      <div id="video-list" class="video-grid"></div>
+    </section>
+  </main>
+
+  <script>
+    fetch('/data/videos.json')
+      .then(resp => resp.json())
+      .then(videos => {
+        const container = document.getElementById('video-list');
+
+        // 按日期倒序（最近的在前面）
+        videos.sort((a, b) => b.publishedDate.localeCompare(a.publishedDate));
+
+        videos.forEach(v => {
+          const card = document.createElement('div');
+          card.className = 'video-card';
+          card.innerHTML = `
+            <h3>${v.title}</h3>
+            <div class="video-meta">
+              <span>${v.publishedDate}</span>
+              ${v.type ? ` · <span>${v.type}</span>` : ''}
+            </div>
+            <iframe
+              src="https://www.youtube.com/embed/${v.videoId}"
+              loading="lazy"
+              allowfullscreen>
+            </iframe>
+          `;
+          container.appendChild(card);
+        });
+      })
+      .catch(err => {
+        console.error('Failed to load videos.json', err);
+        const container = document.getElementById('video-list');
+        container.innerHTML = '<p>Failed to load videos.</p>';
+      });
+  </script>
+</body>
+</html>
