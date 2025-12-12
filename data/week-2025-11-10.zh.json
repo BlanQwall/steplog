@@ -2,7 +2,8 @@
   "week_start": "2025-11-10",
   "week_end": "2025-11-16",
   "activity_types": [
-    "Run"
+    "Run",
+    "Swim"
   ],
   "total_distance_km": 50.23,
   "total_moving_time_min": 271.8,
@@ -22,7 +23,8 @@
       "suffer_score": 1.0,
       "city": "三麻雀村",
       "state": "奥克西塔尼大区",
-      "country": "法国"
+      "country": "法国",
+      "photo": null
     },
     {
       "id": 16428151680,
@@ -37,11 +39,12 @@
       "suffer_score": 22.0,
       "city": "三麻雀村",
       "state": "奥克西塔尼大区",
-      "country": "法国"
+      "country": "法国",
+      "photo": null
     },
     {
       "id": 16428151810,
-      "name": "俱乐部 10’@SP42 + 10x1’: 加入公路团队进行马拉松准备",
+      "name": "俱乐部 10’@马拉松配速 + 10x1’: 加入公路团队进行马拉松准备",
       "description": "",
       "type": "Run",
       "date": "2025-11-11",
@@ -52,11 +55,12 @@
       "suffer_score": 55.0,
       "city": "三麻雀村",
       "state": "奥克西塔尼大区",
-      "country": "法国"
+      "country": "法国",
+      "photo": null
     },
     {
       "id": 16438538627,
-      "name": "夜间葡萄园慢跑 ✨",
+      "name": "慢跑 → 夜间葡萄园 ✨",
       "description": "",
       "type": "Run",
       "date": "2025-11-12",
@@ -67,7 +71,8 @@
       "suffer_score": 34.0,
       "city": null,
       "state": null,
-      "country": null
+      "country": null,
+      "photo": null
     },
     {
       "id": 16448852737,
@@ -82,7 +87,8 @@
       "suffer_score": 1.0,
       "city": "三麻雀村",
       "state": "奥克西塔尼大区",
-      "country": "法国"
+      "country": "法国",
+      "photo": null
     },
     {
       "id": 16448860838,
@@ -96,8 +102,9 @@
       "average_heartrate": 138.0,
       "suffer_score": 25.0,
       "city": "三麻雀村",
-      "state": "朗格多克-鲁西永-Midi-Pyrénées",
-      "country": "法国"
+      "state": "朗格多克-鲁西永 南部-比利牛斯",
+      "country": "法国",
+      "photo": null
     },
     {
       "id": 16462296528,
@@ -112,7 +119,8 @@
       "suffer_score": 65.0,
       "city": "三麻雀村",
       "state": "埃罗省",
-      "country": "法国"
+      "country": "法国",
+      "photo": null
     },
     {
       "id": 16472939669,
@@ -127,7 +135,9 @@
       "suffer_score": 9.0,
       "city": "勒特里亚杜",
       "state": "奥克西塔尼大区",
-      "country": "法国"
+      "country": "法国",
+      "photo": null
     }
-  ]
+  ],
+  "photos": []
 }

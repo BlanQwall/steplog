@@ -2,12 +2,13 @@
   "week_start": "2025-11-17",
   "week_end": "2025-11-23",
   "activity_types": [
-    "Run"
+    "Run",
+    "Swim"
   ],
-  "total_distance_km": 30.95,
-  "total_moving_time_min": 148.3,
-  "activity_count": 5,
-  "avg_suffer_score": 32.2,
+  "total_distance_km": 51.88,
+  "total_moving_time_min": 255.5,
+  "activity_count": 6,
+  "avg_suffer_score": 45.0,
   "activities": [
     {
       "id": 16508329136,
@@ -22,37 +23,8 @@
       "suffer_score": 23.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
-      "country": "France"
-    },
-    {
-      "id": 16517907720,
-      "name": "WD",
-      "description": "",
-      "type": "Run",
-      "date": "2025-11-20",
-      "distance_km": 1.33,
-      "moving_time_min": 7.0,
-      "average_speed_m_s": 3.136,
-      "average_heartrate": 145.7,
-      "suffer_score": 4.0,
-      "city": "Saint-Mathieu-de-Tréviers",
-      "state": "Occitanie",
-      "country": "France"
-    },
-    {
-      "id": 16517902914,
-      "name": "Club 2x(15’+2’acc+1’r): you said MP?🤣",
-      "description": "Coach asked to run 2x15' at marathon pace. I 'm not sure we really did that 🤣. We run much faster! That's why we run in club with young guys...",
-      "type": "Run",
-      "date": "2025-11-20",
-      "distance_km": 8.44,
-      "moving_time_min": 35.5,
-      "average_speed_m_s": 3.962,
-      "average_heartrate": 157.5,
-      "suffer_score": 47.0,
-      "city": "Saint-Mathieu-de-Tréviers",
-      "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": null
     },
     {
       "id": 16517902923,
@@ -67,7 +39,47 @@
       "suffer_score": 9.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": null
+    },
+    {
+      "id": 16517902914,
+      "name": "Club 2x(15’+2’acc+1’r): you said MP?🤣",
+      "description": "Coach asked to run 2x15' at marathon pace. I 'm not sure we really did that 🤣. We run much faster! That's why we run in club with young guys...",
+      "type": "Run",
+      "date": "2025-11-20",
+      "distance_km": 8.44,
+      "moving_time_min": 35.5,
+      "average_speed_m_s": 3.962,
+      "average_heartrate": 157.5,
+      "suffer_score": 47.0,
+      "city": "Saint-Mathieu-de-Tréviers",
+      "state": "Occitanie",
+      "country": "France",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/JY6PHQTKa1bAkdH2mM9kzQH_dVNus0O6Q1CA2-IvxCo-768x172.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/JY6PHQTKa1bAkdH2mM9kzQH_dVNus0O6Q1CA2-IvxCo-128x28.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/JY6PHQTKa1bAkdH2mM9kzQH_dVNus0O6Q1CA2-IvxCo-768x172.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/JY6PHQTKa1bAkdH2mM9kzQH_dVNus0O6Q1CA2-IvxCo-128x28.jpg"
+        }
+      }
+    },
+    {
+      "id": 16517907720,
+      "name": "WD",
+      "description": "",
+      "type": "Run",
+      "date": "2025-11-20",
+      "distance_km": 1.33,
+      "moving_time_min": 7.0,
+      "average_speed_m_s": 3.136,
+      "average_heartrate": 145.7,
+      "suffer_score": 4.0,
+      "city": "Saint-Mathieu-de-Tréviers",
+      "state": "Occitanie",
+      "country": "France",
+      "photo": null
     },
     {
       "id": 16535345927,
@@ -82,7 +94,39 @@
       "suffer_score": 78.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": null
+    },
+    {
+      "id": 16545016334,
+      "name": "Long run",
+      "description": "Feeling tired",
+      "type": "Run",
+      "date": "2025-11-23",
+      "distance_km": 20.94,
+      "moving_time_min": 107.2,
+      "average_speed_m_s": 3.256,
+      "average_heartrate": 149.9,
+      "suffer_score": 109.0,
+      "city": "Les Matelles",
+      "state": "Occitanie",
+      "country": "France",
+      "photo": null
+    }
+  ],
+  "photos": [
+    {
+      "activity_id": 16517902914,
+      "date": "2025-11-20",
+      "type": "Run",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/JY6PHQTKa1bAkdH2mM9kzQH_dVNus0O6Q1CA2-IvxCo-768x172.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/JY6PHQTKa1bAkdH2mM9kzQH_dVNus0O6Q1CA2-IvxCo-128x28.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/JY6PHQTKa1bAkdH2mM9kzQH_dVNus0O6Q1CA2-IvxCo-768x172.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/JY6PHQTKa1bAkdH2mM9kzQH_dVNus0O6Q1CA2-IvxCo-128x28.jpg"
+        }
+      }
     }
   ]
 }

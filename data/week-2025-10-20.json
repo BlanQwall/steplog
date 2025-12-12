@@ -2,7 +2,8 @@
   "week_start": "2025-10-20",
   "week_end": "2025-10-26",
   "activity_types": [
-    "Run"
+    "Run",
+    "Swim"
   ],
   "total_distance_km": 43.79,
   "total_moving_time_min": 221.8,
@@ -22,7 +23,8 @@
       "suffer_score": 61.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": null
     },
     {
       "id": 16214104137,
@@ -37,7 +39,8 @@
       "suffer_score": 49.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": null
     },
     {
       "id": 16255954836,
@@ -52,7 +55,8 @@
       "suffer_score": 3.0,
       "city": null,
       "state": null,
-      "country": null
+      "country": null,
+      "photo": null
     },
     {
       "id": 16256620152,
@@ -67,7 +71,15 @@
       "suffer_score": 96.0,
       "city": null,
       "state": null,
-      "country": null
+      "country": null,
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/mdFxjxX7fNCE4er7kqDnuVU5AJWP-lpsiKh0ElimhVc-768x576.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/mdFxjxX7fNCE4er7kqDnuVU5AJWP-lpsiKh0ElimhVc-128x96.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/mdFxjxX7fNCE4er7kqDnuVU5AJWP-lpsiKh0ElimhVc-768x576.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/mdFxjxX7fNCE4er7kqDnuVU5AJWP-lpsiKh0ElimhVc-128x96.jpg"
+        }
+      }
     },
     {
       "id": 16267151397,
@@ -82,7 +94,8 @@
       "suffer_score": 7.0,
       "city": null,
       "state": null,
-      "country": null
+      "country": null,
+      "photo": null
     },
     {
       "id": 16267224740,
@@ -97,7 +110,8 @@
       "suffer_score": 23.0,
       "city": null,
       "state": null,
-      "country": null
+      "country": null,
+      "photo": null
     },
     {
       "id": 16267156125,
@@ -112,7 +126,23 @@
       "suffer_score": 2.0,
       "city": null,
       "state": null,
-      "country": null
+      "country": null,
+      "photo": null
+    }
+  ],
+  "photos": [
+    {
+      "activity_id": 16256620152,
+      "date": "2025-10-25",
+      "type": "Run",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/mdFxjxX7fNCE4er7kqDnuVU5AJWP-lpsiKh0ElimhVc-768x576.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/mdFxjxX7fNCE4er7kqDnuVU5AJWP-lpsiKh0ElimhVc-128x96.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/mdFxjxX7fNCE4er7kqDnuVU5AJWP-lpsiKh0ElimhVc-768x576.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/mdFxjxX7fNCE4er7kqDnuVU5AJWP-lpsiKh0ElimhVc-128x96.jpg"
+        }
+      }
     }
   ]
 }

@@ -2,7 +2,8 @@
   "week_start": "2025-09-29",
   "week_end": "2025-10-05",
   "activity_types": [
-    "Run"
+    "Run",
+    "Swim"
   ],
   "total_distance_km": 61.33,
   "total_moving_time_min": 295.4,
@@ -22,7 +23,8 @@
       "suffer_score": 44.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": null
     },
     {
       "id": 15994322191,
@@ -37,7 +39,8 @@
       "suffer_score": 4.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": null
     },
     {
       "id": 16005797570,
@@ -52,7 +55,8 @@
       "suffer_score": 60.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": null
     },
     {
       "id": 16021606898,
@@ -67,7 +71,8 @@
       "suffer_score": 22.0,
       "city": null,
       "state": null,
-      "country": null
+      "country": null,
+      "photo": null
     },
     {
       "id": 16030355210,
@@ -82,7 +87,8 @@
       "suffer_score": 26.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": null
     },
     {
       "id": 16037877281,
@@ -97,7 +103,9 @@
       "suffer_score": 74.0,
       "city": "Sète",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": null
     }
-  ]
+  ],
+  "photos": []
 }

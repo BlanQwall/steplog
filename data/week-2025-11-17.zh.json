@@ -2,16 +2,17 @@
   "week_start": "2025-11-17",
   "week_end": "2025-11-23",
   "activity_types": [
-    "Run"
+    "Run",
+    "Swim"
   ],
-  "total_distance_km": 30.95,
-  "total_moving_time_min": 148.3,
-  "activity_count": 5,
-  "avg_suffer_score": 32.2,
+  "total_distance_km": 51.88,
+  "total_moving_time_min": 255.5,
+  "activity_count": 6,
+  "avg_suffer_score": 45.0,
   "activities": [
     {
       "id": 16508329136,
-      "name": "（缓慢）恢复扭伤的脚踝",
+      "name": "(Slowly) coming back from sprained ankle",
       "description": "",
       "type": "Run",
       "date": "2025-11-19",
@@ -22,41 +23,12 @@
       "suffer_score": 23.0,
       "city": "三麻雀村",
       "state": "奥克西塔尼大区",
-      "country": "法国"
-    },
-    {
-      "id": 16517907720,
-      "name": "WD → 休息",
-      "description": "",
-      "type": "Run",
-      "date": "2025-11-20",
-      "distance_km": 1.33,
-      "moving_time_min": 7.0,
-      "average_speed_m_s": 3.136,
-      "average_heartrate": 145.7,
-      "suffer_score": 4.0,
-      "city": "三麻雀村",
-      "state": "奥克西塔尼大区",
-      "country": "法国"
-    },
-    {
-      "id": 16517902914,
-      "name": "俱乐部 2x(15’+2’acc+1’r): 你说的是配速吗？🤣",
-      "description": "教练让我们按马拉松配速跑2x15分钟。我不太确定我们真的做到这一点 🤣。我们跑得快得多！这就是我们和年轻人一起训练的原因…",
-      "type": "Run",
-      "date": "2025-11-20",
-      "distance_km": 8.44,
-      "moving_time_min": 35.5,
-      "average_speed_m_s": 3.962,
-      "average_heartrate": 157.5,
-      "suffer_score": 47.0,
-      "city": "三麻雀村",
-      "state": "奥克西塔尼大区",
-      "country": "法国"
+      "country": "法国",
+      "photo": null
     },
     {
       "id": 16517902923,
-      "name": "热身",
+      "name": "Wu",
       "description": "",
       "type": "Run",
       "date": "2025-11-20",
@@ -67,12 +39,52 @@
       "suffer_score": 9.0,
       "city": "三麻雀村",
       "state": "奥克西塔尼大区",
-      "country": "法国"
+      "country": "法国",
+      "photo": null
+    },
+    {
+      "id": 16517902914,
+      "name": "Club 2x(15’+2’acc+1’r): you said MP?🤣",
+      "description": "Coach asked to run 2x15' at marathon pace. I 'm not sure we really did that 🤣. We run much faster! That's why we run in club with young guys...",
+      "type": "Run",
+      "date": "2025-11-20",
+      "distance_km": 8.44,
+      "moving_time_min": 35.5,
+      "average_speed_m_s": 3.962,
+      "average_heartrate": 157.5,
+      "suffer_score": 47.0,
+      "city": "三麻雀村",
+      "state": "奥克西塔尼大区",
+      "country": "法国",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/JY6PHQTKa1bAkdH2mM9kzQH_dVNus0O6Q1CA2-IvxCo-768x172.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/JY6PHQTKa1bAkdH2mM9kzQH_dVNus0O6Q1CA2-IvxCo-128x28.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/JY6PHQTKa1bAkdH2mM9kzQH_dVNus0O6Q1CA2-IvxCo-768x172.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/JY6PHQTKa1bAkdH2mM9kzQH_dVNus0O6Q1CA2-IvxCo-128x28.jpg"
+        }
+      }
+    },
+    {
+      "id": 16517907720,
+      "name": "放松",
+      "description": "",
+      "type": "Run",
+      "date": "2025-11-20",
+      "distance_km": 1.33,
+      "moving_time_min": 7.0,
+      "average_speed_m_s": 3.136,
+      "average_heartrate": 145.7,
+      "suffer_score": 4.0,
+      "city": "三麻雀村",
+      "state": "奥克西塔尼大区",
+      "country": "法国",
+      "photo": null
     },
     {
       "id": 16535345927,
-      "name": "慢跑 → 渐进 7Km + 3Km@PM",
-      "description": "这就是当你准备明天的长跑时溜达一下，却看到其他俱乐部在跑道上训练的情况。那就不再是溜达了……",
+      "name": "Jog → progressive 7Km + 3Km@PM",
+      "description": "That's what happens when you'd jog a little to prepare for tommorow's long run, but you see another club training on the piste. That's not a jog any more... ",
       "type": "Run",
       "date": "2025-11-22",
       "distance_km": 11.59,
@@ -82,7 +94,39 @@
       "suffer_score": 78.0,
       "city": "三麻雀村",
       "state": "奥克西塔尼大区",
-      "country": "法国"
+      "country": "法国",
+      "photo": null
+    },
+    {
+      "id": 16545016334,
+      "name": "Long run",
+      "description": "Feeling tired",
+      "type": "Run",
+      "date": "2025-11-23",
+      "distance_km": 20.94,
+      "moving_time_min": 107.2,
+      "average_speed_m_s": 3.256,
+      "average_heartrate": 149.9,
+      "suffer_score": 109.0,
+      "city": "莱马泰尔",
+      "state": "奥克西塔尼大区",
+      "country": "法国",
+      "photo": null
+    }
+  ],
+  "photos": [
+    {
+      "activity_id": 16517902914,
+      "date": "2025-11-20",
+      "type": "Run",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/JY6PHQTKa1bAkdH2mM9kzQH_dVNus0O6Q1CA2-IvxCo-768x172.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/JY6PHQTKa1bAkdH2mM9kzQH_dVNus0O6Q1CA2-IvxCo-128x28.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/JY6PHQTKa1bAkdH2mM9kzQH_dVNus0O6Q1CA2-IvxCo-768x172.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/JY6PHQTKa1bAkdH2mM9kzQH_dVNus0O6Q1CA2-IvxCo-128x28.jpg"
+        }
+      }
     }
   ]
 }

@@ -2,7 +2,8 @@
   "week_start": "2025-11-10",
   "week_end": "2025-11-16",
   "activity_types": [
-    "Run"
+    "Run",
+    "Swim"
   ],
   "total_distance_km": 50.23,
   "total_moving_time_min": 271.8,
@@ -22,7 +23,8 @@
       "suffer_score": 1.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": null
     },
     {
       "id": 16428151680,
@@ -37,7 +39,8 @@
       "suffer_score": 22.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": null
     },
     {
       "id": 16428151810,
@@ -52,7 +55,8 @@
       "suffer_score": 55.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": null
     },
     {
       "id": 16438538627,
@@ -67,7 +71,8 @@
       "suffer_score": 34.0,
       "city": null,
       "state": null,
-      "country": null
+      "country": null,
+      "photo": null
     },
     {
       "id": 16448852737,
@@ -82,7 +87,8 @@
       "suffer_score": 1.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": null
     },
     {
       "id": 16448860838,
@@ -97,7 +103,8 @@
       "suffer_score": 25.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Languedoc-Roussillon Midi-Pyrénées",
-      "country": "France"
+      "country": "France",
+      "photo": null
     },
     {
       "id": 16462296528,
@@ -112,7 +119,8 @@
       "suffer_score": 65.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Hérault",
-      "country": "France"
+      "country": "France",
+      "photo": null
     },
     {
       "id": 16472939669,
@@ -127,7 +135,9 @@
       "suffer_score": 9.0,
       "city": "Le Triadou",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": null
     }
-  ]
+  ],
+  "photos": []
 }

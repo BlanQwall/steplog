@@ -2,7 +2,8 @@
   "week_start": "2025-10-27",
   "week_end": "2025-11-02",
   "activity_types": [
-    "Run"
+    "Run",
+    "Swim"
   ],
   "total_distance_km": 58.19,
   "total_moving_time_min": 293.9,
@@ -22,7 +23,8 @@
       "suffer_score": 11.0,
       "city": null,
       "state": null,
-      "country": null
+      "country": null,
+      "photo": null
     },
     {
       "id": 16276735100,
@@ -37,7 +39,8 @@
       "suffer_score": 42.0,
       "city": null,
       "state": null,
-      "country": null
+      "country": null,
+      "photo": null
     },
     {
       "id": 16276602149,
@@ -52,7 +55,8 @@
       "suffer_score": 2.0,
       "city": null,
       "state": null,
-      "country": null
+      "country": null,
+      "photo": null
     },
     {
       "id": 16297474657,
@@ -67,7 +71,8 @@
       "suffer_score": 16.0,
       "city": null,
       "state": null,
-      "country": null
+      "country": null,
+      "photo": null
     },
     {
       "id": 16297478677,
@@ -82,7 +87,8 @@
       "suffer_score": 49.0,
       "city": null,
       "state": null,
-      "country": null
+      "country": null,
+      "photo": null
     },
     {
       "id": 16297478645,
@@ -97,7 +103,8 @@
       "suffer_score": 2.0,
       "city": null,
       "state": null,
-      "country": null
+      "country": null,
+      "photo": null
     },
     {
       "id": 16309094649,
@@ -112,7 +119,8 @@
       "suffer_score": 33.0,
       "city": null,
       "state": null,
-      "country": null
+      "country": null,
+      "photo": null
     },
     {
       "id": 16326564858,
@@ -127,7 +135,8 @@
       "suffer_score": 25.0,
       "city": null,
       "state": null,
-      "country": null
+      "country": null,
+      "photo": null
     },
     {
       "id": 16327188175,
@@ -142,7 +151,30 @@
       "suffer_score": 73.0,
       "city": null,
       "state": "陕西",
-      "country": "中华人民共和国"
+      "country": "中国",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/u2oUmdzxWWZJs8mryES4j4apYcpTACmAKgDJ_MX-bcY-576x768.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/u2oUmdzxWWZJs8mryES4j4apYcpTACmAKgDJ_MX-bcY-96x128.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/u2oUmdzxWWZJs8mryES4j4apYcpTACmAKgDJ_MX-bcY-576x768.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/u2oUmdzxWWZJs8mryES4j4apYcpTACmAKgDJ_MX-bcY-96x128.jpg"
+        }
+      }
+    }
+  ],
+  "photos": [
+    {
+      "activity_id": 16327188175,
+      "date": "2025-11-02",
+      "type": "Run",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/u2oUmdzxWWZJs8mryES4j4apYcpTACmAKgDJ_MX-bcY-576x768.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/u2oUmdzxWWZJs8mryES4j4apYcpTACmAKgDJ_MX-bcY-96x128.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/u2oUmdzxWWZJs8mryES4j4apYcpTACmAKgDJ_MX-bcY-576x768.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/u2oUmdzxWWZJs8mryES4j4apYcpTACmAKgDJ_MX-bcY-96x128.jpg"
+        }
+      }
     }
   ]
 }

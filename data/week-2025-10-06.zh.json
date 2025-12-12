@@ -2,7 +2,8 @@
   "week_start": "2025-10-06",
   "week_end": "2025-10-12",
   "activity_types": [
-    "Run"
+    "Run",
+    "Swim"
   ],
   "total_distance_km": 87.32,
   "total_moving_time_min": 445.1,
@@ -22,7 +23,8 @@
       "suffer_score": 33.0,
       "city": "三麻雀村",
       "state": "奥克西塔尼大区",
-      "country": "法国"
+      "country": "法国",
+      "photo": null
     },
     {
       "id": 16066339597,
@@ -37,7 +39,8 @@
       "suffer_score": 21.0,
       "city": "三麻雀村",
       "state": "奥克西塔尼大区",
-      "country": "法国"
+      "country": "法国",
+      "photo": null
     },
     {
       "id": 16076642223,
@@ -52,7 +55,15 @@
       "suffer_score": 46.0,
       "city": null,
       "state": null,
-      "country": null
+      "country": null,
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/9ulF6YVa4qlE5-p5oS1xyXWZk-8WaUNU_Yd2BMuMNHU-768x432.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/9ulF6YVa4qlE5-p5oS1xyXWZk-8WaUNU_Yd2BMuMNHU-128x72.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/9ulF6YVa4qlE5-p5oS1xyXWZk-8WaUNU_Yd2BMuMNHU-768x432.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/9ulF6YVa4qlE5-p5oS1xyXWZk-8WaUNU_Yd2BMuMNHU-128x72.jpg"
+        }
+      }
     },
     {
       "id": 16081802610,
@@ -67,7 +78,8 @@
       "suffer_score": 35.0,
       "city": "三麻雀村",
       "state": "奥克西塔尼大区",
-      "country": "法国"
+      "country": "法国",
+      "photo": null
     },
     {
       "id": 16092147219,
@@ -82,7 +94,8 @@
       "suffer_score": 17.0,
       "city": "三麻雀村",
       "state": "奥克西塔尼大区",
-      "country": "法国"
+      "country": "法国",
+      "photo": null
     },
     {
       "id": 16102895481,
@@ -97,7 +110,8 @@
       "suffer_score": 55.0,
       "city": null,
       "state": null,
-      "country": null
+      "country": null,
+      "photo": null
     },
     {
       "id": 16113615754,
@@ -112,7 +126,23 @@
       "suffer_score": 35.0,
       "city": "莱马泰尔",
       "state": "奥克西塔尼大区",
-      "country": "法国"
+      "country": "法国",
+      "photo": null
+    }
+  ],
+  "photos": [
+    {
+      "activity_id": 16076642223,
+      "date": "2025-10-08",
+      "type": "Run",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/9ulF6YVa4qlE5-p5oS1xyXWZk-8WaUNU_Yd2BMuMNHU-768x432.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/9ulF6YVa4qlE5-p5oS1xyXWZk-8WaUNU_Yd2BMuMNHU-128x72.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/9ulF6YVa4qlE5-p5oS1xyXWZk-8WaUNU_Yd2BMuMNHU-768x432.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/9ulF6YVa4qlE5-p5oS1xyXWZk-8WaUNU_Yd2BMuMNHU-128x72.jpg"
+        }
+      }
     }
   ]
 }

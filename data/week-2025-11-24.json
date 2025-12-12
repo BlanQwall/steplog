@@ -12,8 +12,8 @@
   "activities": [
     {
       "id": 16555061751,
-      "name": "Evening Run",
-      "description": null,
+      "name": "WU",
+      "description": "",
       "type": "Run",
       "date": "2025-11-24",
       "distance_km": 2.54,
@@ -23,12 +23,13 @@
       "suffer_score": 3.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": null
     },
     {
       "id": 16555067217,
-      "name": "Evening Run",
-      "description": null,
+      "name": "Club PPG",
+      "description": "",
       "type": "Run",
       "date": "2025-11-24",
       "distance_km": 1.93,
@@ -38,7 +39,8 @@
       "suffer_score": 3.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": null
     },
     {
       "id": 16558791161,
@@ -53,7 +55,8 @@
       "suffer_score": 14.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": null
     },
     {
       "id": 16565068976,
@@ -68,7 +71,8 @@
       "suffer_score": 4.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": null
     },
     {
       "id": 16565075741,
@@ -83,7 +87,8 @@
       "suffer_score": 60.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": null
     },
     {
       "id": 16565075792,
@@ -98,12 +103,13 @@
       "suffer_score": 1.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": null
     },
     {
       "id": 16574549331,
       "name": "Evening Run",
-      "description": null,
+      "description": "",
       "type": "Run",
       "date": "2025-11-26",
       "distance_km": 9.15,
@@ -113,7 +119,8 @@
       "suffer_score": 49.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": null
     },
     {
       "id": 16578840956,
@@ -128,7 +135,15 @@
       "suffer_score": 29.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/Oz-O3moGAoL4ke3pKawmnBhGRqyYPNr2u7UeUoprdC8-768x576.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/Oz-O3moGAoL4ke3pKawmnBhGRqyYPNr2u7UeUoprdC8-128x96.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/Oz-O3moGAoL4ke3pKawmnBhGRqyYPNr2u7UeUoprdC8-768x576.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/Oz-O3moGAoL4ke3pKawmnBhGRqyYPNr2u7UeUoprdC8-128x96.jpg"
+        }
+      }
     },
     {
       "id": 16593511747,
@@ -143,7 +158,8 @@
       "suffer_score": 48.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": null
     },
     {
       "id": 16606610414,
@@ -158,11 +174,19 @@
       "suffer_score": 6.0,
       "city": "Montpellier",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/p_en5Ho0Eev5wRFuTOhdo7H8-rxYY7A-D5BvsYaUkcA-768x576.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/p_en5Ho0Eev5wRFuTOhdo7H8-rxYY7A-D5BvsYaUkcA-128x96.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/p_en5Ho0Eev5wRFuTOhdo7H8-rxYY7A-D5BvsYaUkcA-768x576.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/p_en5Ho0Eev5wRFuTOhdo7H8-rxYY7A-D5BvsYaUkcA-128x96.jpg"
+        }
+      }
     },
     {
       "id": 16607802812,
-      "name": "20Km de Montpellier",
+      "name": "Les 20Km de Montpellier",
       "description": "Smooth! I forgot to press the button at start line so 1km missing 😜",
       "type": "Run",
       "date": "2025-11-30",
@@ -173,7 +197,56 @@
       "suffer_score": 177.0,
       "city": "Montpellier",
       "state": "Occitanie",
-      "country": "France"
+      "country": "France",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/FkRh_1HWrrAIRE-sGbCKjsr1IsfGosQLqwKssTu2KZY-576x768.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/FkRh_1HWrrAIRE-sGbCKjsr1IsfGosQLqwKssTu2KZY-96x128.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/FkRh_1HWrrAIRE-sGbCKjsr1IsfGosQLqwKssTu2KZY-576x768.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/FkRh_1HWrrAIRE-sGbCKjsr1IsfGosQLqwKssTu2KZY-96x128.jpg"
+        }
+      }
+    }
+  ],
+  "photos": [
+    {
+      "activity_id": 16578840956,
+      "date": "2025-11-27",
+      "type": "Run",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/Oz-O3moGAoL4ke3pKawmnBhGRqyYPNr2u7UeUoprdC8-768x576.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/Oz-O3moGAoL4ke3pKawmnBhGRqyYPNr2u7UeUoprdC8-128x96.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/Oz-O3moGAoL4ke3pKawmnBhGRqyYPNr2u7UeUoprdC8-768x576.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/Oz-O3moGAoL4ke3pKawmnBhGRqyYPNr2u7UeUoprdC8-128x96.jpg"
+        }
+      }
+    },
+    {
+      "activity_id": 16606610414,
+      "date": "2025-11-30",
+      "type": "Run",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/p_en5Ho0Eev5wRFuTOhdo7H8-rxYY7A-D5BvsYaUkcA-768x576.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/p_en5Ho0Eev5wRFuTOhdo7H8-rxYY7A-D5BvsYaUkcA-128x96.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/p_en5Ho0Eev5wRFuTOhdo7H8-rxYY7A-D5BvsYaUkcA-768x576.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/p_en5Ho0Eev5wRFuTOhdo7H8-rxYY7A-D5BvsYaUkcA-128x96.jpg"
+        }
+      }
+    },
+    {
+      "activity_id": 16607802812,
+      "date": "2025-11-30",
+      "type": "Run",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/FkRh_1HWrrAIRE-sGbCKjsr1IsfGosQLqwKssTu2KZY-576x768.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/FkRh_1HWrrAIRE-sGbCKjsr1IsfGosQLqwKssTu2KZY-96x128.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/FkRh_1HWrrAIRE-sGbCKjsr1IsfGosQLqwKssTu2KZY-576x768.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/FkRh_1HWrrAIRE-sGbCKjsr1IsfGosQLqwKssTu2KZY-96x128.jpg"
+        }
+      }
     }
   ]
 }

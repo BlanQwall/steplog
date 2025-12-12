@@ -2,7 +2,8 @@
   "week_start": "2025-11-03",
   "week_end": "2025-11-09",
   "activity_types": [
-    "Run"
+    "Run",
+    "Swim"
   ],
   "total_distance_km": 28.51,
   "total_moving_time_min": 141.9,
@@ -11,7 +12,7 @@
   "activities": [
     {
       "id": 16337596881,
-      "name": "最最后在家乡的一跑，去送礼物 🎁",
+      "name": "最后在家乡的一跑，去送礼物 🎁",
       "description": "",
       "type": "Run",
       "date": "2025-11-03",
@@ -22,7 +23,8 @@
       "suffer_score": 20.0,
       "city": null,
       "state": null,
-      "country": null
+      "country": null,
+      "photo": null
     },
     {
       "id": 16376844822,
@@ -37,7 +39,8 @@
       "suffer_score": 5.0,
       "city": "三麻雀村",
       "state": "奥克西塔尼大区",
-      "country": "法国"
+      "country": "法国",
+      "photo": null
     },
     {
       "id": 16376844740,
@@ -52,7 +55,8 @@
       "suffer_score": 8.0,
       "city": "三麻雀村",
       "state": "奥克西塔尼大区",
-      "country": "法国"
+      "country": "法国",
+      "photo": null
     },
     {
       "id": 16376844765,
@@ -67,7 +71,8 @@
       "suffer_score": 4.0,
       "city": "三麻雀村",
       "state": "奥克西塔尼大区",
-      "country": "法国"
+      "country": "法国",
+      "photo": null
     },
     {
       "id": 16401096930,
@@ -82,7 +87,8 @@
       "suffer_score": 5.0,
       "city": "阿列斯",
       "state": "朗格多克-鲁西荣",
-      "country": "法国"
+      "country": "法国",
+      "photo": null
     },
     {
       "id": 16402153801,
@@ -97,7 +103,30 @@
       "suffer_score": 60.0,
       "city": "阿列斯",
       "state": "奥克西塔尼大区",
-      "country": "法国"
+      "country": "法国",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/El901g9LpXwQQeaT6kIEiTFVphKETMrI8DL-Cct-2sk-768x576.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/El901g9LpXwQQeaT6kIEiTFVphKETMrI8DL-Cct-2sk-128x96.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/El901g9LpXwQQeaT6kIEiTFVphKETMrI8DL-Cct-2sk-768x576.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/El901g9LpXwQQeaT6kIEiTFVphKETMrI8DL-Cct-2sk-128x96.jpg"
+        }
+      }
+    }
+  ],
+  "photos": [
+    {
+      "activity_id": 16402153801,
+      "date": "2025-11-09",
+      "type": "Run",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/El901g9LpXwQQeaT6kIEiTFVphKETMrI8DL-Cct-2sk-768x576.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/El901g9LpXwQQeaT6kIEiTFVphKETMrI8DL-Cct-2sk-128x96.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/El901g9LpXwQQeaT6kIEiTFVphKETMrI8DL-Cct-2sk-768x576.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/El901g9LpXwQQeaT6kIEiTFVphKETMrI8DL-Cct-2sk-128x96.jpg"
+        }
+      }
     }
   ]
 }

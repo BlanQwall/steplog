@@ -2,7 +2,8 @@
   "week_start": "2025-10-13",
   "week_end": "2025-10-19",
   "activity_types": [
-    "Run"
+    "Run",
+    "Swim"
   ],
   "total_distance_km": 70.59,
   "total_moving_time_min": 369.4,
@@ -22,7 +23,8 @@
       "suffer_score": 1.0,
       "city": "三麻雀村",
       "state": "奥克西塔尼大区",
-      "country": "法国"
+      "country": "法国",
+      "photo": null
     },
     {
       "id": 16133659139,
@@ -37,7 +39,8 @@
       "suffer_score": 25.0,
       "city": "三麻雀村",
       "state": "奥克西塔尼大区",
-      "country": "法国"
+      "country": "法国",
+      "photo": null
     },
     {
       "id": 16140880433,
@@ -52,7 +55,8 @@
       "suffer_score": 77.0,
       "city": "三麻雀村",
       "state": "奥克西塔尼大区",
-      "country": "法国"
+      "country": "法国",
+      "photo": null
     },
     {
       "id": 16150857288,
@@ -67,7 +71,15 @@
       "suffer_score": 15.0,
       "city": null,
       "state": null,
-      "country": null
+      "country": null,
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/oeOYP3zpGLAdNGXXh_hYmY4EWq4gPJ7uhCmax2kXef0-768x432.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/oeOYP3zpGLAdNGXXh_hYmY4EWq4gPJ7uhCmax2kXef0-128x72.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/oeOYP3zpGLAdNGXXh_hYmY4EWq4gPJ7uhCmax2kXef0-768x432.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/oeOYP3zpGLAdNGXXh_hYmY4EWq4gPJ7uhCmax2kXef0-128x72.jpg"
+        }
+      }
     },
     {
       "id": 16156078221,
@@ -82,11 +94,12 @@
       "suffer_score": 37.0,
       "city": "三麻雀村",
       "state": "奥克西塔尼大区",
-      "country": "法国"
+      "country": "法国",
+      "photo": null
     },
     {
       "id": 16160799886,
-      "name": "训练 + 游客课程 SP 5Km 和因低血糖崩溃 😱",
+      "name": "训练 + 旅游 以特定速度跑5Km， 但是因低血糖最后跑蹦 😱",
       "description": "",
       "type": "Run",
       "date": "2025-10-16",
@@ -97,7 +110,8 @@
       "suffer_score": 40.0,
       "city": "卡昂",
       "state": "卡尔瓦多斯",
-      "country": "法国"
+      "country": "法国",
+      "photo": null
     },
     {
       "id": 16176402971,
@@ -112,7 +126,43 @@
       "suffer_score": 23.0,
       "city": "卡昂",
       "state": "诺曼底",
-      "country": "法国"
+      "country": "法国",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/ADx0VoR64VZ2bGHimpTw5Ot2LVoU-zUNJqYbxghfb1s-768x576.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/ADx0VoR64VZ2bGHimpTw5Ot2LVoU-zUNJqYbxghfb1s-128x96.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/ADx0VoR64VZ2bGHimpTw5Ot2LVoU-zUNJqYbxghfb1s-768x576.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/ADx0VoR64VZ2bGHimpTw5Ot2LVoU-zUNJqYbxghfb1s-128x96.jpg"
+        }
+      }
+    }
+  ],
+  "photos": [
+    {
+      "activity_id": 16150857288,
+      "date": "2025-10-15",
+      "type": "Run",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/oeOYP3zpGLAdNGXXh_hYmY4EWq4gPJ7uhCmax2kXef0-768x432.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/oeOYP3zpGLAdNGXXh_hYmY4EWq4gPJ7uhCmax2kXef0-128x72.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/oeOYP3zpGLAdNGXXh_hYmY4EWq4gPJ7uhCmax2kXef0-768x432.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/oeOYP3zpGLAdNGXXh_hYmY4EWq4gPJ7uhCmax2kXef0-128x72.jpg"
+        }
+      }
+    },
+    {
+      "activity_id": 16176402971,
+      "date": "2025-10-18",
+      "type": "Run",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/ADx0VoR64VZ2bGHimpTw5Ot2LVoU-zUNJqYbxghfb1s-768x576.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/ADx0VoR64VZ2bGHimpTw5Ot2LVoU-zUNJqYbxghfb1s-128x96.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/ADx0VoR64VZ2bGHimpTw5Ot2LVoU-zUNJqYbxghfb1s-768x576.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/ADx0VoR64VZ2bGHimpTw5Ot2LVoU-zUNJqYbxghfb1s-128x96.jpg"
+        }
+      }
     }
   ]
 }
