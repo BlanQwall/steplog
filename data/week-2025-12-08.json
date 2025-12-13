@@ -5,10 +5,10 @@
     "Run",
     "Swim"
   ],
-  "total_distance_km": 55.67,
-  "total_moving_time_min": 298.2,
-  "activity_count": 7,
-  "avg_suffer_score": 23.3,
+  "total_distance_km": 62.84,
+  "total_moving_time_min": 335.2,
+  "activity_count": 8,
+  "avg_suffer_score": 22.6,
   "activities": [
     {
       "id": 16691713039,
@@ -149,6 +149,22 @@
           "100": "https://dgtzuqphqg23d.cloudfront.net/G_36rf3CSUexPOxOgwLmm0LzgtC1nrhmRvbSpijvEIU-128x96.jpg"
         }
       }
+    },
+    {
+      "id": 16732421937,
+      "name": "Rec 6Km",
+      "description": "",
+      "type": "Run",
+      "date": "2025-12-13",
+      "distance_km": 7.17,
+      "moving_time_min": 37.0,
+      "average_speed_m_s": 3.227,
+      "average_heartrate": 140.2,
+      "suffer_score": 18.0,
+      "city": "Saint-Mathieu-de-Tréviers",
+      "state": "Occitanie",
+      "country": "France",
+      "photo": null
     }
   ],
   "photos": [
