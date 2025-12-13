@@ -6,6 +6,7 @@
   <title>StepLog | Weekly Template (中文)</title>
   <!-- 注意：模板在 weeklog/ 目录里，所以要用 ../style.css -->
 </head>
+</head>
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../berlin-2026/assets/season.css" />
   <style>
@@ -54,32 +55,69 @@
       cursor: default;
     }
 
-@media (max-width: 720px) {
-      .header-main {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.75rem;
-      }
+    /* 3 · 本周相册 (responsive grid version) */
+    .week-memory-strip {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr)); /* default: 3 per row */
+      gap: 0.75rem;
+      padding: 0.5rem 0;
+    }
 
-      .header-text {
-        max-width: 100%;
-      }
-
-      .berlin-logo {
-        max-width: 70%;
-        height: auto;
-        margin-top: 0.5rem;
-        align-self: flex-start;
+    /* if not enough width -> 2 per row */
+    @media (max-width: 980px) {
+      .week-memory-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
 
+    /* if still not enough -> 1 per row */
+    @media (max-width: 640px) {
+      .week-memory-strip {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .memory-card {
+      width: 100%;
+      border: 1px solid rgba(0,0,0,0.12);
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+
+    .memory-card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .memory-img {
+      width: 100%;
+      height: 220px;
+      object-fit: contain;     /* 不裁切，完整显示 */
+      display: block;
+      background: #f2f2f2;     /* 留白用作 letterbox */
+    }
+
+    .memory-caption {
+      padding: 0.35rem 0.55rem; /* less vertical whitespace */
+      font-size: 0.75rem;
+      line-height: 1.2;
+      color: rgba(0,0,0,0.78);
+      white-space: nowrap;          /* single line */
+      overflow: hidden;
+      text-overflow: ellipsis;      /* truncate long names */
+    }
+
+    /* .memory-title/.memory-sub are no longer used (single-line caption). */
   </style>
 </head>
 <body>
   <!-- 顶部脚本：统一控制这一周的起始日期 & 标题 & 日期范围 & 每日日期 -->
   <script>
     // 模版版本号：手动更新为本文件最后一次修改日期（YYYY-MM-DD）
-    const TEMPLATE_VERSION = "2025-11-23";
+    const TEMPLATE_VERSION = "2025-12-13";
 
     // --- 日期工具：不受浏览器本地时区影响，全部按“UTC 日历日”计算 ---
 
@@ -467,6 +505,20 @@
     </div>
   </section>
 
+  <!-- 3 · 本周相册 -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2>3 · 本周相册</h2>
+      <p class="section-subtitle">
+        本周训练的照片记录 (Strava 每次活动的主图)。
+      </p>
+
+      <div id="week-memory-strip" class="week-memory-strip">
+        <div class="memory-caption">本周暂无照片。</div>
+      </div>
+    </div>
+  </section>
+
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>StepLog · 周报告 <span id="template-version-label"></span></p>
@@ -593,6 +645,98 @@
           // 3) 渲染执行周日历 + 执行 sessions 表格
           renderExecWeeklyCalendar(byDate, info);
           renderExecSessionsTable(flatList);
+          renderWeekMemoryPhotos(data);
+      // 3 · 本周相册：照片墙（自适应 3/2/1 列）
+      function renderWeekMemoryPhotos(data) {
+        const container = document.getElementById("week-memory-strip");
+        if (!container) return;
+
+        const photos = Array.isArray(data.photos) ? data.photos : [];
+        const activities = Array.isArray(data.activities) ? data.activities : [];
+
+        // 建一个 id -> name 的映射（因为 photos 里没有 activity_name）
+        const nameById = {};
+        activities.forEach((a) => {
+          if (a && a.id) nameById[a.id] = a.name || "Session";
+        });
+
+        container.innerHTML = "";
+
+        if (!photos.length) {
+          const empty = document.createElement("div");
+          empty.className = "memory-caption";
+          empty.textContent = "本周暂无照片。";
+          container.appendChild(empty);
+          return;
+        }
+
+        photos.forEach((p) => {
+          const actId = p.activity_id;
+          const actName = (actId && nameById[actId]) ? nameById[actId] : "Session";
+          const dateStr = p.date || "";
+          const photo = p.photo || {};
+
+          // 优先使用较大尺寸（避免 100px 缩略图导致模糊）
+          const imgSrc = (photo.url || photo.thumb || "").trim();
+          if (!imgSrc) return;
+
+          const card = document.createElement("div");
+          card.className = "memory-card";
+
+          const link = document.createElement("a");
+          if (actId) {
+            link.href = `https://www.strava.com/activities/${actId}`;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+          } else {
+            link.href = "#";
+          }
+
+          const img = document.createElement("img");
+          img.className = "memory-img";
+          img.loading = "lazy";
+          img.src = imgSrc;
+          img.alt = `${actName} (${dateStr})`;
+
+          // If multiple sizes are available, provide srcset for better sharpness on retina
+          if (photo.urls && typeof photo.urls === "object") {
+            const entries = Object.entries(photo.urls)
+              .map(([w, u]) => {
+                const ww = parseInt(w, 10);
+                if (!ww || !u) return null;
+                return `${u} ${ww}w`;
+              })
+              .filter(Boolean);
+            if (entries.length) {
+              img.srcset = entries.join(", ");
+              img.sizes = "(max-width: 679px) 92vw, (max-width: 999px) 46vw, 30vw";
+            }
+          }
+
+          // 失败兜底：隐藏损坏图片
+          img.addEventListener("error", () => {
+            card.remove();
+          });
+
+          const cap = document.createElement("div");
+          cap.className = "memory-caption";
+          cap.textContent = dateStr ? `${actName} (${dateStr})` : actName;
+
+          link.appendChild(img);
+          link.appendChild(cap);
+
+          card.appendChild(link);
+          container.appendChild(card);
+        });
+
+        // 如果所有图片都被过滤掉了（例如加载失败），显示空状态
+        if (!container.children.length) {
+          const empty = document.createElement("div");
+          empty.className = "memory-caption";
+          empty.textContent = "本周暂无照片。";
+          container.appendChild(empty);
+        }
+      }
         } catch (err) {
           console.error("Error loading week data:", err);
         }
