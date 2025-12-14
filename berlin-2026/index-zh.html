@@ -1009,15 +1009,24 @@
           link.innerHTML = "";
         }
       } else {
-        // 没有当前周（比如未来还没细化周计划），就用整个 Cycle 信息填卡片
         meta.textContent = cycle.name;
         dates.textContent = `周期范围：${cycleRangeLabel}`;
         focus.textContent = cycle.target ? `目标：${cycle.target}` : "";
-        if (cycle.cyclePage) {
-          link.innerHTML = `周期页面：<a href="${cycle.cyclePage}">${cycle.cyclePage}</a>`;
-        } else {
-          link.innerHTML = "";
-        }
+
+        // 计算本周周一（本地时间）
+        const todayLocal = new Date();
+        const day = todayLocal.getDay(); // 0=周日, 1=周一
+        const diffToMonday = (day === 0 ? -6 : 1) - day;
+        const monday = new Date(todayLocal);
+        monday.setDate(todayLocal.getDate() + diffToMonday);
+
+        const y = monday.getFullYear();
+        const m = String(monday.getMonth() + 1).padStart(2, "0");
+        const d = String(monday.getDate()).padStart(2, "0");
+        const weekStr = `${y}-${m}-${d}`;
+
+        link.innerHTML =
+          `本周记录：<a href="../weeklog/week-berlin-zh.html?week=${weekStr}">本周 ${weekStr}</a>`;
       }
 
       card.style.display = "block";

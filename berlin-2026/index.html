@@ -1011,15 +1011,23 @@
           link.innerHTML = "";
         }
       } else {
-        // 没有当前周（比如未来还没细化周计划），就用整个 Cycle 信息填卡片
         meta.textContent = cycle.name;
         dates.textContent = `Cycle range: ${cycleRangeLabel}`;
         focus.textContent = cycle.target ? `Target: ${cycle.target}` : "";
-        if (cycle.cyclePage) {
-          link.innerHTML = `Cycle page: <a href="${cycle.cyclePage}">${cycle.cyclePage}</a>`;
-        } else {
-          link.innerHTML = "";
-        }
+
+        // fallback: compute current week URL from today's Monday
+        const todayLocal = new Date();
+        const day = todayLocal.getDay(); // 0=Sun, 1=Mon
+        const diffToMonday = (day === 0 ? -6 : 1) - day;
+        const monday = new Date(todayLocal);
+        monday.setDate(todayLocal.getDate() + diffToMonday);
+
+        const y = monday.getFullYear();
+        const m = String(monday.getMonth() + 1).padStart(2, "0");
+        const d = String(monday.getDate()).padStart(2, "0");
+        const weekStr = `${y}-${m}-${d}`;
+
+        link.innerHTML = `Week page: <a href="../weeklog/week-berlin.html?week=${weekStr}">week-${weekStr}</a>`;
       }
 
       card.style.display = "block";
