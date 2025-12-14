@@ -5,10 +5,10 @@
     "Run",
     "Swim"
   ],
-  "total_distance_km": 64.48,
-  "total_moving_time_min": 344.0,
-  "activity_count": 9,
-  "avg_suffer_score": 20.3,
+  "total_distance_km": 88.5,
+  "total_moving_time_min": 466.6,
+  "activity_count": 10,
+  "avg_suffer_score": 27.6,
   "activities": [
     {
       "id": 16691713039,
@@ -188,6 +188,29 @@
           "100": "https://dgtzuqphqg23d.cloudfront.net/xuf2ydOCy-peZSgocXOPoMfVaJw4VTX6yK7vhZ0iq_I-96x128.jpg"
         }
       }
+    },
+    {
+      "id": 16738554425,
+      "name": "MLR 24Km",
+      "description": "",
+      "type": "Run",
+      "date": "2025-12-14",
+      "distance_km": 24.02,
+      "moving_time_min": 122.6,
+      "average_speed_m_s": 3.264,
+      "average_heartrate": 146.7,
+      "suffer_score": 93.0,
+      "city": "Saint-Clément-de-Rivière",
+      "state": "Occitanie",
+      "country": "France",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/fRDj946CS2_vztnD4V_go_DFID_Kd4lcEvfpSJr02T4-768x576.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/fRDj946CS2_vztnD4V_go_DFID_Kd4lcEvfpSJr02T4-128x96.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/fRDj946CS2_vztnD4V_go_DFID_Kd4lcEvfpSJr02T4-768x576.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/fRDj946CS2_vztnD4V_go_DFID_Kd4lcEvfpSJr02T4-128x96.jpg"
+        }
+      }
     }
   ],
   "photos": [
@@ -253,6 +276,19 @@
         "urls": {
           "600": "https://dgtzuqphqg23d.cloudfront.net/xuf2ydOCy-peZSgocXOPoMfVaJw4VTX6yK7vhZ0iq_I-576x768.jpg",
           "100": "https://dgtzuqphqg23d.cloudfront.net/xuf2ydOCy-peZSgocXOPoMfVaJw4VTX6yK7vhZ0iq_I-96x128.jpg"
+        }
+      }
+    },
+    {
+      "activity_id": 16738554425,
+      "date": "2025-12-14",
+      "type": "Run",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/fRDj946CS2_vztnD4V_go_DFID_Kd4lcEvfpSJr02T4-768x576.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/fRDj946CS2_vztnD4V_go_DFID_Kd4lcEvfpSJr02T4-128x96.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/fRDj946CS2_vztnD4V_go_DFID_Kd4lcEvfpSJr02T4-768x576.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/fRDj946CS2_vztnD4V_go_DFID_Kd4lcEvfpSJr02T4-128x96.jpg"
         }
       }
     }
