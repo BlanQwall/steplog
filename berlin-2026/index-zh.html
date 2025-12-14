@@ -1102,6 +1102,27 @@
         running += weeks.length;
       });
 
+      // 兜底：如果没算出 currentIndex，则用“本周周一”的日期在所有 weeks 里定位
+      if (currentIndex === null) {
+        const todayLocal = new Date();
+        const day = todayLocal.getDay(); // 0=周日, 1=周一
+        const diffToMonday = (day === 0 ? -6 : 1) - day;
+        const monday = new Date(todayLocal);
+        monday.setDate(todayLocal.getDate() + diffToMonday);
+
+        const mondayStr = formatDate(monday);
+
+        let idx = 0;
+        cycleBlocks.forEach(({ weeks }) => {
+          weeks.forEach(w => {
+            if (w.startDate === mondayStr && currentIndex === null) {
+              currentIndex = idx;
+            }
+            idx++;
+          });
+        });
+      }
+
       if (currentIndex == null || totalWeeks === 0) {
         arrow.style.display = "none";
       } else {

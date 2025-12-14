@@ -1103,6 +1103,27 @@
         running += weeks.length;
       });
 
+      // Fallback: if no currentIndex found, compute by today's Monday date
+      if (currentIndex === null) {
+        const todayLocal = new Date();
+        const day = todayLocal.getDay(); // 0=Sun, 1=Mon
+        const diffToMonday = (day === 0 ? -6 : 1) - day;
+        const monday = new Date(todayLocal);
+        monday.setDate(todayLocal.getDate() + diffToMonday);
+
+        const mondayStr = formatDate(monday);
+
+        let idx = 0;
+        cycleBlocks.forEach(({ weeks }) => {
+          weeks.forEach(w => {
+            if (w.startDate === mondayStr && currentIndex === null) {
+              currentIndex = idx;
+            }
+            idx++;
+          });
+        });
+      }
+
       if (currentIndex == null || totalWeeks === 0) {
         arrow.style.display = "none";
       } else {
