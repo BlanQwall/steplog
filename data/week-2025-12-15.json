@@ -5,10 +5,10 @@
     "Run",
     "Swim"
   ],
-  "total_distance_km": 16.5,
-  "total_moving_time_min": 87.0,
-  "activity_count": 2,
-  "avg_suffer_score": 24.5,
+  "total_distance_km": 21.15,
+  "total_moving_time_min": 108.0,
+  "activity_count": 3,
+  "avg_suffer_score": 26.7,
   "activities": [
     {
       "id": 16745842176,
@@ -48,6 +48,22 @@
           "100": "https://dgtzuqphqg23d.cloudfront.net/0PNGj-jikCDNVeDTFD6w8DHWRp0tt6EE6e-V_WLJhnE-128x96.jpg"
         }
       }
+    },
+    {
+      "id": 16760906734,
+      "name": "Club VMA 15x1’@VMA90%",
+      "description": "These guys are fast… missing several loops forgot to press the button. Trust me it was so lonnng…",
+      "type": "Run",
+      "date": "2025-12-16",
+      "distance_km": 4.65,
+      "moving_time_min": 21.0,
+      "average_speed_m_s": 3.685,
+      "average_heartrate": 156.3,
+      "suffer_score": 31.0,
+      "city": "Saint-Mathieu-de-Tréviers",
+      "state": "Occitanie",
+      "country": "France",
+      "photo": null
     }
   ],
   "photos": [
