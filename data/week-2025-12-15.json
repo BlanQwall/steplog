@@ -5,10 +5,10 @@
     "Run",
     "Swim"
   ],
-  "total_distance_km": 41.94,
-  "total_moving_time_min": 218.9,
-  "activity_count": 6,
-  "avg_suffer_score": 23.2,
+  "total_distance_km": 58.22,
+  "total_moving_time_min": 294.3,
+  "activity_count": 7,
+  "avg_suffer_score": 31.4,
   "activities": [
     {
       "id": 16745842176,
@@ -108,6 +108,22 @@
       "average_speed_m_s": 3.282,
       "average_heartrate": 143.8,
       "suffer_score": 48.0,
+      "city": "Saint-Mathieu-de-Tréviers",
+      "state": "Occitanie",
+      "country": "France",
+      "photo": null
+    },
+    {
+      "id": 16779037032,
+      "name": "Last club session of 2025! 5x2Km@AS10 (the 5th unfinished 😨)",
+      "description": "",
+      "type": "Run",
+      "date": "2025-12-18",
+      "distance_km": 16.28,
+      "moving_time_min": 75.5,
+      "average_speed_m_s": 3.595,
+      "average_heartrate": 152.4,
+      "suffer_score": 81.0,
       "city": "Saint-Mathieu-de-Tréviers",
       "state": "Occitanie",
       "country": "France",
