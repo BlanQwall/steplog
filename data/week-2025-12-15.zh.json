@@ -5,10 +5,10 @@
     "Run",
     "Swim"
   ],
-  "total_distance_km": 58.22,
-  "total_moving_time_min": 294.3,
-  "activity_count": 7,
-  "avg_suffer_score": 31.4,
+  "total_distance_km": 67.63,
+  "total_moving_time_min": 344.1,
+  "activity_count": 8,
+  "avg_suffer_score": 29.8,
   "activities": [
     {
       "id": 16745842176,
@@ -124,6 +124,22 @@
       "average_speed_m_s": 3.595,
       "average_heartrate": 152.4,
       "suffer_score": 81.0,
+      "city": "三麻雀村",
+      "state": "奥克西塔尼大区",
+      "country": "法国",
+      "photo": null
+    },
+    {
+      "id": 16790205608,
+      "name": "雨天轻松恢复跑",
+      "description": "",
+      "type": "Run",
+      "date": "2025-12-20",
+      "distance_km": 9.41,
+      "moving_time_min": 49.8,
+      "average_speed_m_s": 3.154,
+      "average_heartrate": 136.7,
+      "suffer_score": 18.0,
       "city": "三麻雀村",
       "state": "奥克西塔尼大区",
       "country": "法国",
