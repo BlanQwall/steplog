@@ -5,10 +5,10 @@
     "Run",
     "Swim"
   ],
-  "total_distance_km": 67.63,
-  "total_moving_time_min": 344.1,
-  "activity_count": 8,
-  "avg_suffer_score": 29.8,
+  "total_distance_km": 94.5,
+  "total_moving_time_min": 481.2,
+  "activity_count": 9,
+  "avg_suffer_score": 35.2,
   "activities": [
     {
       "id": 16745842176,
@@ -144,6 +144,29 @@
       "state": "Occitanie",
       "country": "France",
       "photo": null
+    },
+    {
+      "id": 16799831624,
+      "name": "MLR in Lyon",
+      "description": "Left great toe hurts in this shoe for the second time 🧐",
+      "type": "Run",
+      "date": "2025-12-21",
+      "distance_km": 26.87,
+      "moving_time_min": 137.2,
+      "average_speed_m_s": 3.265,
+      "average_heartrate": 143.1,
+      "suffer_score": 79.0,
+      "city": "Lyon",
+      "state": "Auvergne-Rhône-Alpes",
+      "country": "France",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/5CE7GzTu3yc9h029J3DNJ7Z0_l46f7bdirg_J3tbvbg-768x576.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/5CE7GzTu3yc9h029J3DNJ7Z0_l46f7bdirg_J3tbvbg-128x96.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/5CE7GzTu3yc9h029J3DNJ7Z0_l46f7bdirg_J3tbvbg-768x576.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/5CE7GzTu3yc9h029J3DNJ7Z0_l46f7bdirg_J3tbvbg-128x96.jpg"
+        }
+      }
     }
   ],
   "photos": [
@@ -157,6 +180,19 @@
         "urls": {
           "600": "https://dgtzuqphqg23d.cloudfront.net/0PNGj-jikCDNVeDTFD6w8DHWRp0tt6EE6e-V_WLJhnE-768x576.jpg",
           "100": "https://dgtzuqphqg23d.cloudfront.net/0PNGj-jikCDNVeDTFD6w8DHWRp0tt6EE6e-V_WLJhnE-128x96.jpg"
+        }
+      }
+    },
+    {
+      "activity_id": 16799831624,
+      "date": "2025-12-21",
+      "type": "Run",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/5CE7GzTu3yc9h029J3DNJ7Z0_l46f7bdirg_J3tbvbg-768x576.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/5CE7GzTu3yc9h029J3DNJ7Z0_l46f7bdirg_J3tbvbg-128x96.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/5CE7GzTu3yc9h029J3DNJ7Z0_l46f7bdirg_J3tbvbg-768x576.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/5CE7GzTu3yc9h029J3DNJ7Z0_l46f7bdirg_J3tbvbg-128x96.jpg"
         }
       }
     }
