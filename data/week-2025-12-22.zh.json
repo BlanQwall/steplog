@@ -1,0 +1,52 @@
+{
+  "week_start": "2025-12-22",
+  "week_end": "2025-12-28",
+  "activity_types": [
+    "Run",
+    "Swim"
+  ],
+  "total_distance_km": 9.5,
+  "total_moving_time_min": 64.9,
+  "activity_count": 1,
+  "avg_suffer_score": 17.0,
+  "activities": [
+    {
+      "id": 16818173992,
+      "name": "游客跑步在里昂",
+      "description": "",
+      "type": "Run",
+      "date": "2025-12-23",
+      "distance_km": 9.5,
+      "moving_time_min": 64.9,
+      "average_speed_m_s": 2.442,
+      "average_heartrate": 126.0,
+      "suffer_score": 17.0,
+      "city": "里昂",
+      "state": "里昂大都市区",
+      "country": "法国",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/j9HKcZK4hEnxp0rKuNOD8qF4zqWjCF5rr2qZMBf9lBI-768x576.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/j9HKcZK4hEnxp0rKuNOD8qF4zqWjCF5rr2qZMBf9lBI-128x96.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/j9HKcZK4hEnxp0rKuNOD8qF4zqWjCF5rr2qZMBf9lBI-768x576.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/j9HKcZK4hEnxp0rKuNOD8qF4zqWjCF5rr2qZMBf9lBI-128x96.jpg"
+        }
+      }
+    }
+  ],
+  "photos": [
+    {
+      "activity_id": 16818173992,
+      "date": "2025-12-23",
+      "type": "Run",
+      "photo": {
+        "url": "https://dgtzuqphqg23d.cloudfront.net/j9HKcZK4hEnxp0rKuNOD8qF4zqWjCF5rr2qZMBf9lBI-768x576.jpg",
+        "thumb": "https://dgtzuqphqg23d.cloudfront.net/j9HKcZK4hEnxp0rKuNOD8qF4zqWjCF5rr2qZMBf9lBI-128x96.jpg",
+        "urls": {
+          "600": "https://dgtzuqphqg23d.cloudfront.net/j9HKcZK4hEnxp0rKuNOD8qF4zqWjCF5rr2qZMBf9lBI-768x576.jpg",
+          "100": "https://dgtzuqphqg23d.cloudfront.net/j9HKcZK4hEnxp0rKuNOD8qF4zqWjCF5rr2qZMBf9lBI-128x96.jpg"
+        }
+      }
+    }
+  ]
+}
