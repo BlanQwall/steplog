@@ -5,10 +5,10 @@
     "Run",
     "Swim"
   ],
-  "total_distance_km": 25.55,
-  "total_moving_time_min": 143.5,
-  "activity_count": 2,
-  "avg_suffer_score": 37.5,
+  "total_distance_km": 32.31,
+  "total_moving_time_min": 181.3,
+  "activity_count": 3,
+  "avg_suffer_score": 28.0,
   "activities": [
     {
       "id": 16818173992,
@@ -48,6 +48,29 @@
       "state": "Occitanie",
       "country": "France",
       "photo": null
+    },
+    {
+      "id": 16831352462,
+      "name": "GA session Christmas Eve 🎄🧑‍🎄",
+      "description": "Every run in Christmas eve or new year eve is unique. I can feel a complete peace and quietness.",
+      "type": "Run",
+      "date": "2025-12-24",
+      "distance_km": 6.76,
+      "moving_time_min": 37.8,
+      "average_speed_m_s": 2.984,
+      "average_heartrate": 133.1,
+      "suffer_score": 9.0,
+      "city": "Saint-Mathieu-de-Tréviers",
+      "state": "Occitanie",
+      "country": "France",
+      "photo": {
+        "url": "https://d35tn3x5zm6xrc.cloudfront.net/a1Y3AcKZy3SbKW7zqsinJmB-YoiLi9DPux0Iyk0s_rQ/thumbnails/a1Y3AcKZy3SbKW7zqsinJmB-YoiLi9DPux0Iyk0s_rQ_600x600.jpg",
+        "thumb": "https://d35tn3x5zm6xrc.cloudfront.net/a1Y3AcKZy3SbKW7zqsinJmB-YoiLi9DPux0Iyk0s_rQ/thumbnails/a1Y3AcKZy3SbKW7zqsinJmB-YoiLi9DPux0Iyk0s_rQ_600x600.jpg",
+        "urls": {
+          "600": "https://d35tn3x5zm6xrc.cloudfront.net/a1Y3AcKZy3SbKW7zqsinJmB-YoiLi9DPux0Iyk0s_rQ/thumbnails/a1Y3AcKZy3SbKW7zqsinJmB-YoiLi9DPux0Iyk0s_rQ_600x600.jpg",
+          "100": "https://d35tn3x5zm6xrc.cloudfront.net/a1Y3AcKZy3SbKW7zqsinJmB-YoiLi9DPux0Iyk0s_rQ/thumbnails/a1Y3AcKZy3SbKW7zqsinJmB-YoiLi9DPux0Iyk0s_rQ_600x600.jpg"
+        }
+      }
     }
   ],
   "photos": [
@@ -61,6 +84,19 @@
         "urls": {
           "600": "https://dgtzuqphqg23d.cloudfront.net/j9HKcZK4hEnxp0rKuNOD8qF4zqWjCF5rr2qZMBf9lBI-768x576.jpg",
           "100": "https://dgtzuqphqg23d.cloudfront.net/j9HKcZK4hEnxp0rKuNOD8qF4zqWjCF5rr2qZMBf9lBI-128x96.jpg"
+        }
+      }
+    },
+    {
+      "activity_id": 16831352462,
+      "date": "2025-12-24",
+      "type": "Run",
+      "photo": {
+        "url": "https://d35tn3x5zm6xrc.cloudfront.net/a1Y3AcKZy3SbKW7zqsinJmB-YoiLi9DPux0Iyk0s_rQ/thumbnails/a1Y3AcKZy3SbKW7zqsinJmB-YoiLi9DPux0Iyk0s_rQ_600x600.jpg",
+        "thumb": "https://d35tn3x5zm6xrc.cloudfront.net/a1Y3AcKZy3SbKW7zqsinJmB-YoiLi9DPux0Iyk0s_rQ/thumbnails/a1Y3AcKZy3SbKW7zqsinJmB-YoiLi9DPux0Iyk0s_rQ_600x600.jpg",
+        "urls": {
+          "600": "https://d35tn3x5zm6xrc.cloudfront.net/a1Y3AcKZy3SbKW7zqsinJmB-YoiLi9DPux0Iyk0s_rQ/thumbnails/a1Y3AcKZy3SbKW7zqsinJmB-YoiLi9DPux0Iyk0s_rQ_600x600.jpg",
+          "100": "https://d35tn3x5zm6xrc.cloudfront.net/a1Y3AcKZy3SbKW7zqsinJmB-YoiLi9DPux0Iyk0s_rQ/thumbnails/a1Y3AcKZy3SbKW7zqsinJmB-YoiLi9DPux0Iyk0s_rQ_600x600.jpg"
         }
       }
     }
