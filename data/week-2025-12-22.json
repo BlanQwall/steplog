@@ -5,10 +5,10 @@
     "Run",
     "Swim"
   ],
-  "total_distance_km": 9.5,
-  "total_moving_time_min": 64.9,
-  "activity_count": 1,
-  "avg_suffer_score": 17.0,
+  "total_distance_km": 25.55,
+  "total_moving_time_min": 143.5,
+  "activity_count": 2,
+  "avg_suffer_score": 37.5,
   "activities": [
     {
       "id": 16818173992,
@@ -32,6 +32,22 @@
           "100": "https://dgtzuqphqg23d.cloudfront.net/j9HKcZK4hEnxp0rKuNOD8qF4zqWjCF5rr2qZMBf9lBI-128x96.jpg"
         }
       }
+    },
+    {
+      "id": 16827382793,
+      "name": "5Km@SP21 session Merry Christmas 🎄",
+      "description": "",
+      "type": "Run",
+      "date": "2025-12-24",
+      "distance_km": 16.04,
+      "moving_time_min": 78.7,
+      "average_speed_m_s": 3.4,
+      "average_heartrate": 147.4,
+      "suffer_score": 58.0,
+      "city": "Saint-Mathieu-de-Tréviers",
+      "state": "Occitanie",
+      "country": "France",
+      "photo": null
     }
   ],
   "photos": [
