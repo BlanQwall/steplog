@@ -5,10 +5,10 @@
     "Run",
     "Swim"
   ],
-  "total_distance_km": 32.31,
-  "total_moving_time_min": 181.3,
-  "activity_count": 3,
-  "avg_suffer_score": 28.0,
+  "total_distance_km": 54.93,
+  "total_moving_time_min": 293.2,
+  "activity_count": 4,
+  "avg_suffer_score": 32.8,
   "activities": [
     {
       "id": 16818173992,
@@ -71,6 +71,22 @@
           "100": "https://d35tn3x5zm6xrc.cloudfront.net/a1Y3AcKZy3SbKW7zqsinJmB-YoiLi9DPux0Iyk0s_rQ/thumbnails/a1Y3AcKZy3SbKW7zqsinJmB-YoiLi9DPux0Iyk0s_rQ_600x600.jpg"
         }
       }
+    },
+    {
+      "id": 16836988192,
+      "name": "GA Santa’s back home",
+      "description": "",
+      "type": "Run",
+      "date": "2025-12-25",
+      "distance_km": 22.62,
+      "moving_time_min": 112.0,
+      "average_speed_m_s": 3.368,
+      "average_heartrate": 141.0,
+      "suffer_score": 47.0,
+      "city": "Saint-Mathieu-de-Tréviers",
+      "state": "Occitanie",
+      "country": "France",
+      "photo": null
     }
   ],
   "photos": [
